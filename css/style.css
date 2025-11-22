@@ -449,14 +449,14 @@ a:hover {
   box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--text-primary);
 }
 
 .category-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--text-primary);
 }
 
 .category-card h3 {
@@ -707,7 +707,7 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--text-color);
+  background-color: var(--text-primary);
   color: white;
   padding: var(--spacing-md);
   display: flex;
@@ -828,7 +828,7 @@ img {
   padding: var(--spacing-md);
   display: none;
   line-height: 1.7;
-  color: var(--text-color);
+  color: var(--text-primary);
 }
 
 .faq-answer p {
@@ -1385,6 +1385,27 @@ img {
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.9rem;
   margin: 0;
+}
+
+/* Trust Badges */
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin: var(--spacing-lg) 0;
+}
+
+.trust-badges span {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-xl);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
 }
 
 /* Print Styles */
