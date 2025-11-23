@@ -8,41 +8,39 @@
    ========================================================================== */
 
 :root {
-  /* Couleurs authentiques Drops Design */
-  --drops-beige: #f7f5f3;
-  --drops-cream: #fefcfa;
-  --drops-warm-white: #faf8f6;
-  --drops-soft-gray: #e8e6e4;
-  --drops-medium-gray: #c4c2c0;
-  --drops-dark-gray: #6b6967;
-  --drops-charcoal: #3a3937;
-  --drops-accent-coral: #d4a574;
-  --drops-accent-sage: #a8b5a0;
-  --drops-accent-dusty: #c9a96e;
+  /* Palette Drops Design Authentique - Ultra-minimaliste */
+  --drops-white: #ffffff;
+  --drops-cream: #fdfcfb;
+  --drops-beige: #f9f7f5;
+  --drops-light-gray: #f0efed;
+  --drops-border: #e5e3e1;
+  --drops-text: #4a4845;
+  --drops-text-secondary: #8b8886;
+  --drops-text-light: #b5b2af;
+  
+  /* Accents ultra-subtils */
+  --drops-link: #7a9490;
+  --drops-link-hover: #5d7874;
   
   /* Typography Drops */
   --font-serif: 'Playfair Display', 'Georgia', serif;
   --font-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   
-  /* Spacing harmonieux */
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2.5rem;
-  --space-xl: 4rem;
-  --space-xxl: 6rem;
+  /* Spacing scandinave - BEAUCOUP d'espace blanc */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xl: 80px;
+  --space-xxl: 120px;
   
-  /* Border radius doux */
-  --radius-sm: 3px;
-  --radius-md: 6px;
-  --radius-lg: 12px;
-  --radius-xl: 20px;
+  /* Drops Design = Angles droits partout */
+  --radius: 0;
   
-  /* Ombres subtiles */
-  --shadow-soft: 0 2px 12px rgba(58, 57, 55, 0.08);
-  --shadow-medium: 0 4px 20px rgba(58, 57, 55, 0.12);
-  --shadow-strong: 0 8px 32px rgba(58, 57, 55, 0.16);
+  /* Ombres minimales scandinaves */
+  --shadow-minimal: 0 1px 3px rgba(74, 72, 69, 0.05);
+  --shadow-subtle: 0 2px 8px rgba(74, 72, 69, 0.08);
 }
 
 /* ==========================================================================
@@ -63,80 +61,81 @@ html {
 
 body {
   font-family: var(--font-sans);
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--drops-charcoal);
-  background-color: var(--drops-cream);
+  font-size: 14px;                    /* Plus petit - style Drops */
+  line-height: 1.8;                   /* Plus aéré */
+  color: var(--drops-text);
+  background-color: var(--drops-white); /* Fond blanc pur */
+  font-weight: 300;                    /* Police plus légère */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* ==========================================================================
-   TYPOGRAPHY DROPS STYLE
+   TYPOGRAPHY DROPS DESIGN AUTHENTIQUE
    ========================================================================== */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
+  color: var(--drops-text);
+  margin-bottom: var(--space-md);
+}
+
+h1 {
+  font-size: 2.25rem;                 /* Plus petit que 3.5rem */
+  font-weight: 300;                   /* Ultra-léger */
+  letter-spacing: 0.02em;             /* Spacing positif */
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.75rem;                 /* Plus modeste */
   font-weight: 400;
+  text-transform: uppercase;          /* DROPS aime les uppercase */
+  letter-spacing: 0.1em;              /* Très espacé */
   line-height: 1.3;
-  color: var(--drops-charcoal);
-  margin-bottom: var(--space-sm);
-  letter-spacing: -0.02em;
 }
 
-h1 { 
-  font-size: 3.5rem; 
-  margin-bottom: var(--space-md);
-  font-weight: 300;
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
-h2 { 
-  font-size: 2.5rem; 
-  margin-bottom: var(--space-md);
-}
-
-h3 { 
-  font-size: 1.875rem; 
-  margin-bottom: var(--space-sm);
-}
-
-h4 { 
-  font-size: 1.5rem; 
-}
-
-h5 { 
-  font-size: 1.25rem; 
-}
-
-h6 { 
-  font-size: 1.125rem; 
+h4, h5, h6 {
+  font-size: 0.875rem;                /* Très petit */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;             /* Très espacé */
 }
 
 p {
-  margin-bottom: var(--space-sm);
-  color: var(--drops-dark-gray);
-  font-size: 1.0625rem;
-  line-height: 1.8;
-}
-
-.lead {
-  font-size: 1.25rem;
-  line-height: 1.7;
-  color: var(--drops-dark-gray);
+  font-size: 0.875rem;                /* 14px - plus petit */
+  line-height: 1.9;                   /* Très aéré */
   font-weight: 300;
+  margin-bottom: var(--space-md);
+  color: var(--drops-text);
 }
 
+/* Liens Drops Design - ultra-subtils */
 a {
-  color: var(--drops-accent-dusty);
+  color: var(--drops-link);
   text-decoration: none;
-  transition: all 0.3s ease;
-  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--drops-charcoal);
-  border-bottom-color: var(--drops-accent-dusty);
+  color: var(--drops-link-hover);
 }
+
+.lead {
+  font-size: 1rem;                    /* Plus petit */
+  line-height: 1.9;
+  color: var(--drops-text-secondary);
+  font-weight: 300;
+  margin-bottom: var(--space-lg);
+}
+
 
 /* ==========================================================================
    LAYOUT CONTAINERS
@@ -145,7 +144,12 @@ a:hover {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-md);
+  padding: 0 40px;                     /* Plus de marge latérale */
+}
+
+.section {
+  padding: var(--space-xxl) 0;        /* 120px - sections très espacées */
+  margin-bottom: var(--space-xxl);
 }
 
 .container-narrow {
@@ -202,20 +206,18 @@ a:hover {
 }
 
 .main-nav a {
-  font-size: 0.9375rem;
-  font-weight: 400;
-  color: var(--drops-dark-gray);
+  font-size: 0.75rem;                 /* TRÈS petit - style Drops */
+  font-weight: 500;
+  color: var(--drops-text-secondary);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;             /* Très espacé */
   padding: var(--space-xs) 0;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 .main-nav a:hover,
 .main-nav a.active {
-  color: var(--drops-charcoal);
-  border-bottom-color: var(--drops-accent-dusty);
+  color: var(--drops-text);
 }
 
 /* ==========================================================================
@@ -223,23 +225,9 @@ a:hover {
    ========================================================================== */
 
 .hero {
-  background: linear-gradient(135deg, var(--drops-warm-white) 0%, var(--drops-beige) 100%);
-  padding: var(--space-xxl) 0;
+  background: var(--drops-white);     /* Fond uni blanc - style Drops */
+  padding: var(--space-xl) 0 var(--space-xxl);
   margin-bottom: var(--space-xl);
-  position: relative;
-  overflow: hidden;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="0.5" fill="%23f7f5f3" opacity="0.3"/><circle cx="80" cy="40" r="0.3" fill="%23e8e6e4" opacity="0.2"/><circle cx="40" cy="80" r="0.4" fill="%23c4c2c0" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
-  opacity: 0.3;
-  pointer-events: none;
 }
 
 .hero-content {
@@ -323,67 +311,41 @@ a:hover {
 
 .btn {
   display: inline-block;
-  padding: var(--space-sm) var(--space-lg);
+  padding: 12px 32px;
   font-family: var(--font-sans);
-  font-size: 0.9375rem;
-  font-weight: 500;
+  font-size: 0.75rem;                 /* Plus petit */
+  font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border: 2px solid transparent;
-  border-radius: var(--radius-sm);
+  letter-spacing: 0.15em;             /* Très espacé */
+  border: none;                       /* Drops n'utilise pas de bordures décoratives */
+  border-radius: var(--radius);       /* 0 - angles droits */
   cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
+  transition: background 0.2s ease, transform 0.15s ease;
 }
 
-.btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: left 0.5s ease;
-}
-
-.btn:hover::before {
-  left: 100%;
+.btn:hover {
+  transform: translateY(-1px);        /* Mouvement subtil */
+  box-shadow: var(--shadow-subtle);
 }
 
 .btn-primary {
-  background: var(--drops-charcoal);
-  color: var(--drops-cream);
-  border-color: var(--drops-charcoal);
+  background: var(--drops-text);
+  color: var(--drops-white);
 }
 
 .btn-primary:hover {
-  background: var(--drops-accent-dusty);
-  border-color: var(--drops-accent-dusty);
-  color: var(--drops-charcoal);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-soft);
+  background: var(--drops-text-secondary);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--drops-charcoal);
-  border-color: var(--drops-charcoal);
+  color: var(--drops-text);
+  border: 1px solid var(--drops-border);
 }
 
 .btn-secondary:hover {
-  background: var(--drops-charcoal);
-  color: var(--drops-cream);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-soft);
-}
-
-.btn-outline {
-  background: transparent;
-  color: var(--drops-accent-dusty);
-  border-color: var(--drops-accent-dusty);
+  background: var(--drops-light-gray);
 }
 
 .btn-outline:hover {
@@ -402,7 +364,7 @@ a:hover {
 
 .grid {
   display: grid;
-  gap: var(--space-lg);
+  gap: var(--space-lg);                /* 48px - gap plus large */
 }
 
 .grid-2 { 
@@ -418,10 +380,39 @@ a:hover {
 }
 
 .grid-auto {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 56px 32px;                     /* Gap vertical plus large */
 }
 
+/* ==========================================================================
+   RESPONSIVE DROPS DESIGN
+   ========================================================================== */
+
 @media (max-width: 768px) {
+  body {
+    font-size: 13px;                   /* Encore plus petit */
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .section {
+    padding: 56px 0;                   /* Espacement mobile important */
+  }
+  
+  .container {
+    padding: 0 24px;
+  }
+  
+  .grid {
+    gap: 40px;                         /* Gap mobile important */
+  }
+  
   .grid-2, .grid-3, .grid-4 {
     grid-template-columns: 1fr;
   }
@@ -438,48 +429,35 @@ a:hover {
    ========================================================================== */
 
 .card {
-  background: var(--drops-warm-white);
-  border-radius: var(--radius-lg);
-  padding: var(--space-lg);
-  box-shadow: var(--shadow-soft);
-  border: 1px solid var(--drops-soft-gray);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--drops-accent-coral), var(--drops-accent-sage), var(--drops-accent-dusty));
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-medium);
-}
-
-.card:hover::before {
-  opacity: 1;
+  background: var(--drops-white);
+  border-radius: var(--radius);        /* 0 - pas de radius */
+  padding: 0;                          /* Pas de padding interne */
+  box-shadow: none;                    /* Pas d'ombre */
+  border: none;                        /* Pas de bordure */
+  transition: none;                    /* Pas de hover effect */
 }
 
 .card h3 {
-  color: var(--drops-charcoal);
-  margin-bottom: var(--space-sm);
-  font-size: 1.5rem;
+  font-size: 0.875rem;                /* Petit titre */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-xs);
+  color: var(--drops-text);
+}
+
+.card p {
+  font-size: 0.75rem;                 /* Très petit texte */
+  color: var(--drops-text-secondary);
+  margin-bottom: var(--space-md);
 }
 
 .card img {
   width: 100%;
-  height: 200px;
+  height: auto;                       /* Hauteur automatique */
+  aspect-ratio: 3/4;                  /* Ratio vertical pour tricot */
   object-fit: cover;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius);       /* Pas de radius */
   margin-bottom: var(--space-sm);
 }
 
