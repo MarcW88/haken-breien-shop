@@ -483,21 +483,60 @@ a:hover {
 }
 
 .product-card {
+  background: var(--drops-white);
+  border: 1px solid var(--drops-border);
+  padding: var(--space-lg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-minimal);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-subtle);
+}
+
+.product-card h4 {
+  margin-bottom: var(--space-md);
+  color: var(--drops-text);
+  font-size: 1.125rem;
+  font-weight: 500;
   text-align: center;
+}
+
+.product-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.product-card li {
+  padding: var(--space-xs) 0;
+  font-size: 0.875rem;
+  color: var(--drops-text-secondary);
+  line-height: 1.6;
+  border-bottom: 1px solid var(--drops-light-gray);
+}
+
+.product-card li:last-child {
+  border-bottom: none;
 }
 
 .product-card .price {
   font-family: var(--font-serif);
-  font-size: 1.25rem;                 /* Plus petit */
+  font-size: 1.25rem;
   color: var(--drops-text);
   font-weight: 400;
   margin: var(--space-sm) 0;
+  text-align: center;
 }
 
 .product-card .rating {
   color: var(--drops-text-secondary);
   margin-bottom: var(--space-sm);
-  font-size: 0.75rem;                 /* Plus petit */
+  font-size: 0.75rem;
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -727,6 +766,328 @@ a:hover {
   margin: 0;
   font-size: 0.75rem;
   color: var(--drops-text-secondary);
+}
+
+/* ==========================================================================
+   CONTENT CARDS & STRUCTURE - USER FRIENDLY
+   ========================================================================== */
+
+.intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.technique-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  margin: var(--space-xl) 0;
+}
+
+@media (max-width: 768px) {
+  .technique-comparison {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+.technique-card {
+  background: var(--drops-white);
+  border: 1px solid var(--drops-border);
+  padding: var(--space-xl);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-minimal);
+}
+
+.technique-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-md);
+  color: var(--drops-text);
+  font-weight: 500;
+}
+
+.technique-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.technique-card li {
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid var(--drops-light-gray);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--drops-text);
+}
+
+.technique-card li:last-child {
+  border-bottom: none;
+}
+
+.recommendation-guide {
+  background: var(--drops-light-gray);
+  padding: var(--space-xl);
+  margin: var(--space-xl) 0;
+  border-radius: var(--radius);
+}
+
+.recommendation-guide h3 {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  color: var(--drops-text);
+}
+
+.recommendation-card {
+  background: var(--drops-white);
+  padding: var(--space-lg);
+  border-radius: var(--radius);
+  border: 1px solid var(--drops-border);
+  box-shadow: var(--shadow-minimal);
+}
+
+.recommendation-card h4 {
+  margin-bottom: var(--space-md);
+  color: var(--drops-text);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.recommendation-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recommendation-card li {
+  padding: var(--space-xs) 0;
+  font-size: 0.875rem;
+  color: var(--drops-text-secondary);
+  line-height: 1.6;
+}
+
+.tip {
+  background: var(--drops-beige);
+  padding: var(--space-md);
+  border-radius: var(--radius);
+  margin-top: var(--space-lg);
+  border-left: 3px solid var(--drops-link);
+  font-size: 0.875rem;
+}
+
+/* ==========================================================================
+   PARCOURS CARDS - USER JOURNEY
+   ========================================================================== */
+
+.parcours-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+  margin: var(--space-xl) 0;
+}
+
+@media (max-width: 768px) {
+  .parcours-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+.parcours-card {
+  background: var(--drops-white);
+  border: 1px solid var(--drops-border);
+  padding: var(--space-xl);
+  border-radius: var(--radius);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--shadow-minimal);
+}
+
+.parcours-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-subtle);
+}
+
+.parcours-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+  display: block;
+  line-height: 1;
+}
+
+.parcours-card h3 {
+  margin-bottom: var(--space-sm);
+  color: var(--drops-text);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.parcours-card > p {
+  color: var(--drops-text-secondary);
+  margin-bottom: var(--space-md);
+  font-size: 0.875rem;
+}
+
+.parcours-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-lg) 0;
+  text-align: left;
+}
+
+.parcours-card li {
+  padding: var(--space-xs) 0;
+  font-size: 0.875rem;
+  color: var(--drops-text-secondary);
+  border-bottom: 1px solid var(--drops-light-gray);
+  line-height: 1.6;
+}
+
+.parcours-card li:last-child {
+  border-bottom: none;
+}
+
+/* ==========================================================================
+   CATEGORIES GRID - DETAILED CARDS
+   ========================================================================== */
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-xl);
+  margin: var(--space-xl) 0;
+}
+
+@media (max-width: 768px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+.category-detailed-card {
+  background: var(--drops-white);
+  border: 1px solid var(--drops-border);
+  padding: var(--space-xl);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-minimal);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-detailed-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-subtle);
+}
+
+.category-detailed-card h3 {
+  margin-bottom: var(--space-lg);
+  color: var(--drops-text);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.category-levels {
+  margin-bottom: var(--space-lg);
+}
+
+.level-info {
+  background: var(--drops-light-gray);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius);
+  border-left: 3px solid var(--drops-link);
+}
+
+.level-info:last-child {
+  margin-bottom: 0;
+}
+
+.level-info h4 {
+  margin-bottom: var(--space-xs);
+  color: var(--drops-text);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.level-info p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--drops-text-secondary);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   ARTICLE CONTENT & TABLES
+   ========================================================================== */
+
+.article-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.article-content h3 {
+  margin: var(--space-xl) 0 var(--space-md) 0;
+  color: var(--drops-text);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.article-content p {
+  margin-bottom: var(--space-md);
+  line-height: 1.7;
+  color: var(--drops-text);
+}
+
+.comparison-table {
+  margin: var(--space-xl) 0;
+  overflow-x: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-minimal);
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--drops-white);
+  font-size: 0.875rem;
+}
+
+.comparison-table th {
+  background: var(--drops-light-gray);
+  padding: var(--space-md);
+  text-align: left;
+  font-weight: 600;
+  color: var(--drops-text);
+  border-bottom: 1px solid var(--drops-border);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.comparison-table td {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--drops-light-gray);
+  color: var(--drops-text-secondary);
+  line-height: 1.5;
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table tr:hover {
+  background: var(--drops-light-gray);
+}
+
+@media (max-width: 768px) {
+  .comparison-table {
+    font-size: 0.75rem;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: var(--space-sm);
+  }
 }
 
 /* Patterns décoratifs supprimés - non conformes au minimalisme Drops Design */
