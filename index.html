@@ -36,66 +36,452 @@
     </div>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1586281010595-0dac6b8b6e7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover; color: white; padding: 80px 0; margin-bottom: 3rem;">
+    <div class="container">
+      <div class="hero-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <p class="hero-kicker" style="font-size: 0.9rem; font-weight: 600; color: #f0f0f0; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem;">Haken & Breien Shop</p>
+        <h1 style="font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Maak Je Droomproject Werkelijkheid</h1>
+        <p style="font-size: 1.3rem; margin-bottom: 1.5rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Meer dan 500 gratis patronen, eerlijke reviews en koopgidsen. Beoordeeld met 4.8/5 door 2.000+ makers.</p>
+        
+        <!-- Trust Badges -->
+        <div class="trust-badges" style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+          <div class="trust-badge" style="background: rgba(255,255,255,0.95); color: #333; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600;">
+            500+ Gratis Patronen
+          </div>
+          <div class="trust-badge" style="background: rgba(255,255,255,0.95); color: #333; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600;">
+            100% Onafhankelijk
+          </div>
+          <div class="trust-badge" style="background: rgba(255,255,255,0.95); color: #333; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600;">
+            4.8/5 ★ (2.000+ reviews)
+          </div>
+        </div>
+        
+        <!-- Double CTA -->
+        <div class="hero-cta" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="/patronen/" class="btn btn--cta" style="background: var(--color-primary); border: none; padding: 1rem 2rem; font-size: 1.1rem; border-radius: 8px; text-decoration: none; color: white; font-weight: 600;">
+            Ontdek Gratis Patronen
+          </a>
+          <a href="#top-producten" class="btn btn--secondary" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600;">
+            Bekijk Bestsellers
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <main class="site-main container">
     <article class="page-home">
-      <header class="page-home__header text-center">
-        <p class="page-kicker">Haken & Breien Shop</p>
-        <h1>Jouw complete gids voor haken en breien</h1>
-        <p class="page-intro">
-          Onafhankelijke reviews, koopgidsen en gratis patronen voor haken en breien. 
-          Ontdek de beste garens, naalden en accessoires voor jouw volgende project.
-        </p>
-      </header>
 
-      <section class="grid grid--3">
-        <article class="card">
-          <h2>Haken</h2>
-          <p>Ontdek welke garens, naalden en patronen je nodig hebt voor jouw volgende haakproject. Van amigurumi tot dekens.</p>
-          <a href="/haken/" class="btn btn--primary">Naar haken gids</a>
-        </article>
+      <!-- Top 6 Producten Section -->
+      <section class="section" id="top-producten">
+        <h2 class="section-title text-center" style="font-size: 2rem; margin-bottom: 2rem;">Populair bij Makers</h2>
         
-        <article class="card">
-          <h2>Breien</h2>
-          <p>Leer welke breimaterialen het beste zijn voor truien, sjaals en andere breiprojecten. Inclusief koopgidsen.</p>
-          <a href="/breien/" class="btn btn--primary">Naar breien gids</a>
-        </article>
-        
-        <article class="card">
-          <h2>Gratis patronen</h2>
-          <p>Honderden gratis haak- en breipatronen voor elk niveau. Van beginner tot gevorderd.</p>
-          <a href="/patronen/" class="btn btn--primary">Bekijk patronen</a>
-        </article>
+        <!-- Haken Producten -->
+        <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">🧶 Populair bij Haken</h3>
+        <div class="grid grid--3" style="margin-bottom: 3rem;">
+          <div class="product-card card" style="position: relative;">
+            <div class="product-badge" style="position: absolute; top: 10px; left: 10px; background: var(--color-primary); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; z-index: 2;">#1 Bestseller</div>
+            <img src="https://images.unsplash.com/photo-1586281010595-0dac6b8b6e7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Premium Katoenen Haakgaren Set" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+            <h4 style="margin: 1rem 0 0.5rem 0;">Premium Katoenen Haakgaren Set</h4>
+            <div class="rating" style="margin-bottom: 0.5rem;">
+              <span style="color: #ffd700;">★★★★★</span>
+              <span style="font-size: 0.9rem; color: #666;">(247 reviews)</span>
+            </div>
+            <div class="price-container" style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+              <span class="price" style="font-size: 1.3rem; font-weight: 700; color: var(--color-primary);">€12,95</span>
+              <span style="font-size: 0.8rem; color: #666;">per set (8 kleuren)</span>
+            </div>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Perfect voor amigurumi en kleine projecten. Zachte katoen, makkelijk te wassen.</p>
+            <a href="https://partnerprogramma.bol.com/click/click?p=2&t=url&s=XXXX&f=TXN&url=https://www.bol.com/nl/p/haakgaren-set/" 
+               target="_blank" 
+               rel="nofollow noopener"
+               class="btn btn--primary"
+               data-affiliate="true"
+               data-product="Premium Katoenen Haakgaren Set"
+               data-position="top-haken-1"
+               style="width: 100%; text-align: center;">
+              Bekijk op Bol.com
+            </a>
+          </div>
+
+          <div class="product-card card" style="position: relative;">
+            <div class="product-badge" style="position: absolute; top: 10px; left: 10px; background: var(--color-accent); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; z-index: 2;">Klantfavoriet</div>
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Complete Haaknaald Set" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+            <h4 style="margin: 1rem 0 0.5rem 0;">Complete Haaknaald Set</h4>
+            <div class="rating" style="margin-bottom: 0.5rem;">
+              <span style="color: #ffd700;">★★★★★</span>
+              <span style="font-size: 0.9rem; color: #666;">(189 reviews)</span>
+            </div>
+            <div class="price-container" style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+              <span class="price" style="font-size: 1.3rem; font-weight: 700; color: var(--color-primary);">€24,50</span>
+              <span style="font-size: 0.8rem; color: #666;">incl. opbergtas</span>
+            </div>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Ergonomische haaknaalden 2.0-10.0mm. Met handige opbergtas en steekmarkeerders.</p>
+            <a href="https://partnerprogramma.bol.com/click/click?p=2&t=url&s=XXXX&f=TXN&url=https://www.bol.com/nl/p/haaknaald-set/" 
+               target="_blank" 
+               rel="nofollow noopener"
+               class="btn btn--primary"
+               data-affiliate="true"
+               data-product="Complete Haaknaald Set"
+               data-position="top-haken-2"
+               style="width: 100%; text-align: center;">
+              Bekijk op Bol.com
+            </a>
+          </div>
+
+          <div class="product-card card" style="position: relative;">
+            <div class="product-badge" style="position: absolute; top: 10px; left: 10px; background: #28a745; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; z-index: 2;">Budget Tip</div>
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Haak Accessoires Kit" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+            <h4 style="margin: 1rem 0 0.5rem 0;">Haak Accessoires Kit</h4>
+            <div class="rating" style="margin-bottom: 0.5rem;">
+              <span style="color: #ffd700;">★★★★☆</span>
+              <span style="font-size: 0.9rem; color: #666;">(156 reviews)</span>
+            </div>
+            <div class="price-container" style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+              <span class="price" style="font-size: 1.3rem; font-weight: 700; color: var(--color-primary);">€8,75</span>
+              <span style="font-size: 0.8rem; color: #666;">complete set</span>
+            </div>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Steekmarkeerders, tapestrynaald, meetlint en projecttas. Alles wat je nodig hebt!</p>
+            <a href="https://partnerprogramma.bol.com/click/click?p=2&t=url&s=XXXX&f=TXN&url=https://www.bol.com/nl/p/haak-accessoires/" 
+               target="_blank" 
+               rel="nofollow noopener"
+               class="btn btn--primary"
+               data-affiliate="true"
+               data-product="Haak Accessoires Kit"
+               data-position="top-haken-3"
+               style="width: 100%; text-align: center;">
+              Bekijk op Bol.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Breien Producten -->
+        <h3 style="color: var(--color-accent); margin-bottom: 1.5rem;">🧵 Populair bij Breien</h3>
+        <div class="grid grid--3" style="margin-bottom: 2rem;">
+          <div class="product-card card" style="position: relative;">
+            <div class="product-badge" style="position: absolute; top: 10px; left: 10px; background: var(--color-accent); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; z-index: 2;">#1 Bestseller</div>
+            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Zachte Wollen Breigaren" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+            <h4 style="margin: 1rem 0 0.5rem 0;">Zachte Wollen Breigaren</h4>
+            <div class="rating" style="margin-bottom: 0.5rem;">
+              <span style="color: #ffd700;">★★★★★</span>
+              <span style="font-size: 0.9rem; color: #666;">(312 reviews)</span>
+            </div>
+            <div class="price-container" style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+              <span class="price" style="font-size: 1.3rem; font-weight: 700; color: var(--color-primary);">€15,95</span>
+              <span style="font-size: 0.8rem; color: #666;">per 100g bol</span>
+            </div>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Merino wol, perfect voor truien en sjaals. Zacht, warm en makkelijk te breien.</p>
+            <a href="https://partnerprogramma.bol.com/click/click?p=2&t=url&s=XXXX&f=TXN&url=https://www.bol.com/nl/p/breigaren-wol/" 
+               target="_blank" 
+               rel="nofollow noopener"
+               class="btn btn--primary"
+               data-affiliate="true"
+               data-product="Zachte Wollen Breigaren"
+               data-position="top-breien-1"
+               style="width: 100%; text-align: center;">
+              Bekijk op Bol.com
+            </a>
+          </div>
+
+          <div class="product-card card" style="position: relative;">
+            <div class="product-badge" style="position: absolute; top: 10px; left: 10px; background: var(--color-primary); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; z-index: 2;">Eco-Friendly</div>
+            <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Bamboe Breinaalden Set" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+            <h4 style="margin: 1rem 0 0.5rem 0;">Bamboe Breinaalden Set</h4>
+            <div class="rating" style="margin-bottom: 0.5rem;">
+              <span style="color: #ffd700;">★★★★☆</span>
+              <span style="font-size: 0.9rem; color: #666;">(198 reviews)</span>
+            </div>
+            <div class="price-container" style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+              <span class="price" style="font-size: 1.3rem; font-weight: 700; color: var(--color-primary);">€18,50</span>
+              <span style="font-size: 0.8rem; color: #666;">set van 10</span>
+            </div>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Duurzame bamboe naalden 3.0-10.0mm. Licht, glad en milieuvriendelijk.</p>
+            <a href="https://partnerprogramma.bol.com/click/click?p=2&t=url&s=XXXX&f=TXN&url=https://www.bol.com/nl/p/bamboe-breinaalden/" 
+               target="_blank" 
+               rel="nofollow noopener"
+               class="btn btn--primary"
+               data-affiliate="true"
+               data-product="Bamboe Breinaalden Set"
+               data-position="top-breien-2"
+               style="width: 100%; text-align: center;">
+              Bekijk op Bol.com
+            </a>
+          </div>
+
+          <div class="product-card card" style="position: relative;">
+            <div class="product-badge" style="position: absolute; top: 10px; left: 10px; background: #dc3545; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; z-index: 2;">Premium</div>
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Breimachine voor Beginners" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+            <h4 style="margin: 1rem 0 0.5rem 0;">Breimachine voor Beginners</h4>
+            <div class="rating" style="margin-bottom: 0.5rem;">
+              <span style="color: #ffd700;">★★★★★</span>
+              <span style="font-size: 0.9rem; color: #666;">(89 reviews)</span>
+            </div>
+            <div class="price-container" style="display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0;">
+              <span class="price" style="font-size: 1.3rem; font-weight: 700; color: var(--color-primary);">€89,95</span>
+              <span style="font-size: 0.8rem; color: #666;">incl. instructies</span>
+            </div>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Compacte breimachine voor sjaals en mutsen. Perfect voor beginners!</p>
+            <a href="https://partnerprogramma.bol.com/click/click?p=2&t=url&s=XXXX&f=TXN&url=https://www.bol.com/nl/p/breimachine/" 
+               target="_blank" 
+               rel="nofollow noopener"
+               class="btn btn--primary"
+               data-affiliate="true"
+               data-product="Breimachine voor Beginners"
+               data-position="top-breien-3"
+               style="width: 100%; text-align: center;">
+              Bekijk op Bol.com
+            </a>
+          </div>
+        </div>
+
+        <div class="affiliate-disclaimer" style="text-align: center; margin-top: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+          <p style="margin: 0; font-size: 0.9rem; color: #666;"><small>Deze pagina bevat affiliatielinks. Als je via onze links een aankoop doet, kunnen wij een commissie ontvangen zonder extra kosten voor jou.</small></p>
+        </div>
       </section>
 
-      <section class="page-home__featured">
-        <h2>Populaire koopgidsen</h2>
-        <div class="grid grid--2">
-          <article class="card">
-            <h3>Beste haakgaren voor amigurumi</h3>
-            <p>We vergeleken 10 populaire garens voor amigurumi. Dit zijn onze 5 favorieten op basis van stevigheid, kleurkeuze en prijs.</p>
-            <a href="/beste-haakgaren-katoen/" class="btn btn--outline">Bekijk top 5</a>
+      <!-- Categories Section met Images -->
+      <section class="categories-section" style="margin: 3rem 0;">
+        <h2 class="section-title text-center" style="font-size: 2rem; margin-bottom: 2rem;">Ontdek Jouw Passie</h2>
+        <div class="grid grid--3">
+          <article class="card" style="position: relative; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Haken projecten" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+            <div class="category-badge" style="position: absolute; top: 15px; right: 15px; background: var(--color-primary); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600;">500+ patronen</div>
+            <h2 style="color: var(--color-primary);">🧶 Haken</h2>
+            <p>Ontdek welke garens, naalden en patronen je nodig hebt voor jouw volgende haakproject. Van amigurumi tot dekens.</p>
+            <div style="margin-bottom: 1rem;">
+              <span style="background: #e8f5e8; color: #2d5a2d; padding: 0.2rem 0.6rem; border-radius: 10px; font-size: 0.8rem; margin-right: 0.5rem;">Amigurumi</span>
+              <span style="background: #e8f5e8; color: #2d5a2d; padding: 0.2rem 0.6rem; border-radius: 10px; font-size: 0.8rem; margin-right: 0.5rem;">Dekens</span>
+              <span style="background: #e8f5e8; color: #2d5a2d; padding: 0.2rem 0.6rem; border-radius: 10px; font-size: 0.8rem;">Tasjes</span>
+            </div>
+            <a href="/haken/" class="btn btn--primary" style="width: 100%; text-align: center;">Ontdek Haakprojecten</a>
           </article>
           
-          <article class="card">
-            <h3>Beste haaknaalden voor beginners</h3>
-            <p>Welke haaknaalden zijn het beste voor beginners? Onze selectie van ergonomische en betaalbare haaknaalden.</p>
-            <a href="/beste-haaknaalden-beginners/" class="btn btn--outline">Bekijk gids</a>
+          <article class="card" style="position: relative; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Breien projecten" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+            <div class="category-badge" style="position: absolute; top: 15px; right: 15px; background: var(--color-accent); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600;">300+ patronen</div>
+            <h2 style="color: var(--color-accent);">🧵 Breien</h2>
+            <p>Leer welke breimaterialen het beste zijn voor truien, sjaals en andere breiprojecten. Inclusief koopgidsen.</p>
+            <div style="margin-bottom: 1rem;">
+              <span style="background: #e8f0ff; color: #2d4a7d; padding: 0.2rem 0.6rem; border-radius: 10px; font-size: 0.8rem; margin-right: 0.5rem;">Truien</span>
+              <span style="background: #e8f0ff; color: #2d4a7d; padding: 0.2rem 0.6rem; border-radius: 10px; font-size: 0.8rem; margin-right: 0.5rem;">Sjaals</span>
+              <span style="background: #e8f0ff; color: #2d4a7d; padding: 0.2rem 0.6rem; border-radius: 10px; font-size: 0.8rem;">Mutsen</span>
+            </div>
+            <a href="/breien/" class="btn btn--secondary" style="width: 100%; text-align: center;">Start met Breien</a>
+          </article>
+          
+          <article class="card" style="position: relative; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1586281010595-0dac6b8b6e7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Gratis patronen" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+            <div class="category-badge" style="position: absolute; top: 15px; right: 15px; background: #28a745; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600;">100% Gratis</div>
+            <h2 style="color: #28a745;">📄 Gratis patronen</h2>
+            <p>Honderden gratis haak- en breipatronen voor elk niveau. Van beginner tot gevorderd.</p>
+            <div style="margin-bottom: 1rem;">
+              <span style="background: #e8f8e8; color: #2d5a2d; padding: 0.2rem 0.6rem; border-radius: 10px; font-size: 0.8rem; margin-right: 0.5rem;">Beginner</span>
+              <span style="background: #e8f8e8; color: #2d5a2d; padding: 0.2rem 0.6rem; border-radius: 10px; font-size: 0.8rem; margin-right: 0.5rem;">Gevorderd</span>
+              <span style="background: #e8f8e8; color: #2d5a2d; padding: 0.2rem 0.6rem; border-radius: 10px; font-size: 0.8rem;">PDF</span>
+            </div>
+            <a href="/patronen/" class="btn btn--cta" style="width: 100%; text-align: center; background: #28a745;">Download Gratis Patronen</a>
           </article>
         </div>
       </section>
 
-      <section class="page-home__about">
-        <div class="card">
-          <h2>Over Haken-Breien-Shop.nl</h2>
-          <p>
-            Wij zijn een onafhankelijke gids voor haak- en breimaterialen. We testen producten, 
-            schrijven eerlijke reviews en delen gratis patronen. Onze aanbevelingen bevatten 
-            affiliate links naar Bol.com en Amazon - zo kunnen we deze website gratis houden.
-          </p>
-          <p>
-            <a href="/over-ons/" class="btn btn--link">Meer over ons</a> • 
-            <a href="/affiliate-disclaimer/" class="btn btn--link">Affiliate disclaimer</a>
-          </p>
+      <!-- Inspiratie Gallerij Section -->
+      <section class="inspiratie-section" style="background: #f8f9fa; padding: 3rem 0; margin: 3rem -1.5rem 0 -1.5rem; border-radius: 20px;">
+        <div class="container">
+          <h2 class="section-title text-center" style="font-size: 2rem; margin-bottom: 1rem;">Inspiratie Gallerij</h2>
+          <p class="text-center" style="margin-bottom: 2rem; color: #666; font-size: 1.1rem;">Projecten gemaakt door onze community met onze aanbevolen materialen</p>
+          
+          <div class="grid grid--3" style="margin-bottom: 2rem;">
+            <div class="project-card" style="position: relative; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+              <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300&q=80" alt="Amigurumi beer" loading="lazy" style="width: 100%; height: 250px; object-fit: cover;">
+              <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 1rem;">
+                <h4 style="margin: 0 0 0.5rem 0; font-size: 1rem;">Amigurumi Beer</h4>
+                <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">Door Sarah M. • Katoen garen</p>
+              </div>
+            </div>
+            
+            <div class="project-card" style="position: relative; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+              <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300&q=80" alt="Gebreide trui" loading="lazy" style="width: 100%; height: 250px; object-fit: cover;">
+              <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 1rem;">
+                <h4 style="margin: 0 0 0.5rem 0; font-size: 1rem;">Gebreide Trui</h4>
+                <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">Door Emma K. • Merino wol</p>
+              </div>
+            </div>
+            
+            <div class="project-card" style="position: relative; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300&q=80" alt="Gehaakte deken" loading="lazy" style="width: 100%; height: 250px; object-fit: cover;">
+              <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 1rem;">
+                <h4 style="margin: 0 0 0.5rem 0; font-size: 1rem;">Granny Square Deken</h4>
+                <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">Door Lisa V. • Acryl garen</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center">
+            <a href="/gallerij/" class="btn btn--outline" style="margin-right: 1rem;">Bekijk Meer Projecten</a>
+            <a href="/patronen/" class="btn btn--cta">Download Patronen</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials-section" style="margin: 3rem 0;">
+        <h2 class="section-title text-center" style="font-size: 2rem; margin-bottom: 2rem;">Wat Makers Zeggen</h2>
+        
+        <div class="grid grid--3">
+          <div class="testimonial-card card" style="text-align: center; padding: 2rem;">
+            <div class="testimonial-image" style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1rem; background: url('https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80') center/cover;"></div>
+            <p style="font-style: italic; margin-bottom: 1rem; color: #555;">"Dankzij de koopgidsen heb ik eindelijk het perfecte garen gevonden voor mijn amigurumi projecten. De reviews zijn eerlijk en gedetailleerd!"</p>
+            <div class="testimonial-author" style="font-weight: 600; color: #333;">Sarah M.</div>
+            <div class="testimonial-location" style="font-size: 0.9rem; color: #666;">Amsterdam</div>
+            <div class="testimonial-rating" style="margin-top: 0.5rem; color: #ffd700;">★★★★★</div>
+          </div>
+          
+          <div class="testimonial-card card" style="text-align: center; padding: 2rem;">
+            <div class="testimonial-image" style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1rem; background: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80') center/cover;"></div>
+            <p style="font-style: italic; margin-bottom: 1rem; color: #555;">"De gratis patronen zijn van topkwaliteit! Ik heb al 5 projecten gemaakt en ze zijn allemaal perfect uitgelegd."</p>
+            <div class="testimonial-author" style="font-weight: 600; color: #333;">Mark V.</div>
+            <div class="testimonial-location" style="font-size: 0.9rem; color: #666;">Utrecht</div>
+            <div class="testimonial-rating" style="margin-top: 0.5rem; color: #ffd700;">★★★★★</div>
+          </div>
+          
+          <div class="testimonial-card card" style="text-align: center; padding: 2rem;">
+            <div class="testimonial-image" style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1rem; background: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80') center/cover;"></div>
+            <p style="font-style: italic; margin-bottom: 1rem; color: #555;">"Als beginner was ik overweldigd door alle keuzes. Deze site heeft me geholpen de juiste materialen te vinden voor mijn niveau."</p>
+            <div class="testimonial-author" style="font-weight: 600; color: #333;">Emma K.</div>
+            <div class="testimonial-location" style="font-size: 0.9rem; color: #666;">Rotterdam</div>
+            <div class="testimonial-rating" style="margin-top: 0.5rem; color: #ffd700;">★★★★★</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Populaire Koopgidsen Section -->
+      <section class="page-home__featured">
+        <h2 class="section-title text-center" style="font-size: 2rem; margin-bottom: 2rem;">Populaire Koopgidsen</h2>
+        <div class="grid grid--2">
+          <article class="card" style="position: relative;">
+            <img src="https://images.unsplash.com/photo-1586281010595-0dac6b8b6e7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80" alt="Haakgaren voor amigurumi" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+            <div class="guide-badge" style="position: absolute; top: 15px; left: 15px; background: var(--color-primary); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600;">Meest gelezen</div>
+            <h3>Beste haakgaren voor amigurumi</h3>
+            <p>We vergeleken 10 populaire garens voor amigurumi. Dit zijn onze 5 favorieten op basis van stevigheid, kleurkeuze en prijs.</p>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; font-size: 0.9rem; color: #666;">
+              <span>⏱️ 8 min lezen</span>
+              <span>📅 Bijgewerkt: nov 2024</span>
+            </div>
+            <a href="/beste-haakgaren-katoen/" class="btn btn--outline" style="width: 100%; text-align: center;">Bekijk Top 5</a>
+          </article>
+          
+          <article class="card" style="position: relative;">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80" alt="Haaknaalden voor beginners" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+            <div class="guide-badge" style="position: absolute; top: 15px; left: 15px; background: var(--color-accent); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600;">Beginners</div>
+            <h3>Beste haaknaalden voor beginners</h3>
+            <p>Welke haaknaalden zijn het beste voor beginners? Onze selectie van ergonomische en betaalbare haaknaalden.</p>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; font-size: 0.9rem; color: #666;">
+              <span>⏱️ 6 min lezen</span>
+              <span>📅 Bijgewerkt: nov 2024</span>
+            </div>
+            <a href="/beste-haaknaalden-beginners/" class="btn btn--outline" style="width: 100%; text-align: center;">Bekijk Gids</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section" style="margin: 3rem 0;">
+        <h2 class="section-title text-center" style="font-size: 2rem; margin-bottom: 2rem;">Veelgestelde Vragen</h2>
+        
+        <div style="max-width: 800px; margin: 0 auto;">
+          <div class="faq-item card" style="margin-bottom: 1rem;">
+            <div class="faq-question" style="padding: 1.25rem; font-weight: 600; cursor: pointer; border: none; background: none; width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'; this.querySelector('.faq-icon').textContent = this.nextElementSibling.style.display === 'block' ? '−' : '+'">
+              <span>Welke haaknaald maat heb ik nodig voor beginners?</span>
+              <span class="faq-icon" style="font-size: 1.5rem; font-weight: 300;">+</span>
+            </div>
+            <div class="faq-answer" style="display: none; padding: 0 1.25rem 1.25rem; color: #666;">
+              <p style="margin: 0;">Voor beginners raden we haaknaald maat 4.0-5.0mm aan. Deze maten zijn makkelijk te hanteren en geschikt voor de meeste garens. Start met een ergonomische naald voor meer comfort.</p>
+            </div>
+          </div>
+
+          <div class="faq-item card" style="margin-bottom: 1rem;">
+            <div class="faq-question" style="padding: 1.25rem; font-weight: 600; cursor: pointer; border: none; background: none; width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'; this.querySelector('.faq-icon').textContent = this.nextElementSibling.style.display === 'block' ? '−' : '+'">
+              <span>Hoeveel garen heb ik nodig voor een deken?</span>
+              <span class="faq-icon" style="font-size: 1.5rem; font-weight: 300;">+</span>
+            </div>
+            <div class="faq-answer" style="display: none; padding: 0 1.25rem 1.25rem; color: #666;">
+              <p style="margin: 0;">Voor een standaard deken (150x200cm) heb je ongeveer 1200-1500 gram garen nodig. Dit hangt af van de steeksoort en garendikte. Check altijd het patroon voor exacte hoeveelheden.</p>
+            </div>
+          </div>
+
+          <div class="faq-item card" style="margin-bottom: 1rem;">
+            <div class="faq-question" style="padding: 1.25rem; font-weight: 600; cursor: pointer; border: none; background: none; width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'; this.querySelector('.faq-icon').textContent = this.nextElementSibling.style.display === 'block' ? '−' : '+'">
+              <span>Zijn jullie aanbevelingen echt onafhankelijk?</span>
+              <span class="faq-icon" style="font-size: 1.5rem; font-weight: 300;">+</span>
+            </div>
+            <div class="faq-answer" style="display: none; padding: 0 1.25rem 1.25rem; color: #666;">
+              <p style="margin: 0;">Ja! We testen alle producten zelf en ontvangen geen betaling van merken voor reviews. We verdienen alleen via affiliate commissies als je koopt via onze links, maar dit beïnvloedt niet onze eerlijke beoordelingen.</p>
+            </div>
+          </div>
+
+          <div class="faq-item card" style="margin-bottom: 1rem;">
+            <div class="faq-question" style="padding: 1.25rem; font-weight: 600; cursor: pointer; border: none; background: none; width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'; this.querySelector('.faq-icon').textContent = this.nextElementSibling.style.display === 'block' ? '−' : '+'">
+              <span>Hoe download ik de gratis patronen?</span>
+              <span class="faq-icon" style="font-size: 1.5rem; font-weight: 300;">+</span>
+            </div>
+            <div class="faq-answer" style="display: none; padding: 0 1.25rem 1.25rem; color: #666;">
+              <p style="margin: 0;">Ga naar onze patronen pagina, kies je gewenste patroon en klik op 'Download PDF'. Alle patronen zijn 100% gratis en geen registratie vereist. Je ontvangt direct een downloadlink.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Over Ons Section -->
+      <section class="page-home__about" style="background: #f8f9fa; padding: 3rem 0; margin: 3rem -1.5rem 0 -1.5rem; border-radius: 20px;">
+        <div class="container">
+          <div class="grid grid--2" style="align-items: center;">
+            <div>
+              <h2 style="font-size: 2rem; margin-bottom: 1rem;">Over Haken-Breien-Shop.nl</h2>
+              <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #555;">
+                Wij zijn gepassioneerde makers die begonnen als hobbyisten en nu onze expertise delen met de community. 
+                Sinds 2022 hebben we meer dan 500 producten getest en 1000+ patronen gecureerd.
+              </p>
+              
+              <!-- Trust Stats -->
+              <div class="trust-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem;">
+                <div style="text-align: center; padding: 1rem; background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                  <div style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">500+</div>
+                  <div style="font-size: 0.9rem; color: #666;">Patronen Getest</div>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                  <div style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">2.000+</div>
+                  <div style="font-size: 0.9rem; color: #666;">Tevreden Gebruikers</div>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                  <div style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">3</div>
+                  <div style="font-size: 0.9rem; color: #666;">Jaar Ervaring</div>
+                </div>
+              </div>
+
+              <!-- Trust Badges -->
+              <div class="trust-badges" style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                <span style="background: white; color: var(--color-primary); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 2px solid var(--color-primary);">🔍 Onafhankelijk Getest</span>
+                <span style="background: white; color: var(--color-accent); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 2px solid var(--color-accent);">✅ Eerlijke Reviews</span>
+                <span style="background: white; color: #28a745; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 2px solid #28a745;">🚫 Geen Gesponsorde Content</span>
+              </div>
+
+              <p style="margin-bottom: 1.5rem; color: #666;">
+                Onze aanbevelingen bevatten affiliate links naar Bol.com en Amazon - zo kunnen we deze website gratis houden 
+                en blijven investeren in nieuwe reviews en patronen.
+              </p>
+              
+              <div>
+                <a href="/over-ons/" class="btn btn--primary" style="margin-right: 1rem;">Meer over ons</a>
+                <a href="/affiliate-disclaimer/" class="btn btn--outline">Affiliate disclaimer</a>
+              </div>
+            </div>
+            
+            <div style="text-align: center;">
+              <img src="https://images.unsplash.com/photo-1586281010595-0dac6b8b6e7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80" alt="Ons team aan het werk" loading="lazy" style="width: 100%; max-width: 400px; height: 300px; object-fit: cover; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666; font-style: italic;">Ons team test dagelijks nieuwe materialen</p>
+            </div>
+          </div>
         </div>
       </section>
     </article>
@@ -105,34 +491,83 @@
     <div class="container footer__grid">
       <section>
         <h3>Haken-Breien-Shop.nl</h3>
-        <p>Jouw complete gids voor haken en breien.</p>
+        <p style="margin-bottom: 1.5rem;">Jouw complete gids voor haken en breien. Meer dan 500 gratis patronen en eerlijke reviews.</p>
+        
+        <!-- Newsletter Signup -->
+        <div style="background: #f0f0f0; padding: 1.5rem; border-radius: 10px; margin-bottom: 1.5rem;">
+          <h4 style="margin-bottom: 1rem; font-size: 1rem;">📧 Wekelijkse Patronen & Tips</h4>
+          <form style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+            <input type="email" placeholder="je@email.nl" required style="flex: 1; padding: 0.8rem; border: none; border-radius: 5px; background: white; color: #333;">
+            <button type="submit" style="background: var(--color-primary); color: white; border: none; padding: 0.8rem 1.2rem; border-radius: 5px; cursor: pointer; font-weight: 600; white-space: nowrap;">Aanmelden</button>
+          </form>
+          <p style="font-size: 0.8rem; color: #666; margin: 0;">Geen spam, uitschrijven altijd mogelijk</p>
+        </div>
+        
+        <!-- Social Media -->
+        <div>
+          <h4 style="margin-bottom: 1rem; font-size: 1rem;">Volg Ons</h4>
+          <div style="display: flex; gap: 1rem;">
+            <a href="https://instagram.com/hakenbreienshop" target="_blank" style="background: var(--color-primary); color: white; padding: 0.8rem; border-radius: 50%; text-decoration: none; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; font-size: 1.2rem;">📷</a>
+            <a href="https://pinterest.com/hakenbreienshop" target="_blank" style="background: var(--color-accent); color: white; padding: 0.8rem; border-radius: 50%; text-decoration: none; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; font-size: 1.2rem;">📌</a>
+            <a href="https://youtube.com/@hakenbreienshop" target="_blank" style="background: #dc3545; color: white; padding: 0.8rem; border-radius: 50%; text-decoration: none; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; font-size: 1.2rem;">📺</a>
+            <a href="https://facebook.com/hakenbreienshop" target="_blank" style="background: #3b5998; color: white; padding: 0.8rem; border-radius: 50%; text-decoration: none; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; font-size: 1.2rem;">📘</a>
+          </div>
+        </div>
       </section>
+      
       <section>
-        <h4>Patronen</h4>
+        <h4>Populaire Categorieën</h4>
         <ul>
           <li><a href="/haakpatronen/">Haakpatronen</a></li>
           <li><a href="/breipatronen/">Breipatronen</a></li>
+          <li><a href="/amigurumi-patronen/">Amigurumi</a></li>
+          <li><a href="/deken-patronen/">Dekens</a></li>
+          <li><a href="/trui-patronen/">Truien</a></li>
         </ul>
       </section>
+      
       <section>
-        <h4>Gidsen</h4>
+        <h4>Koopgidsen</h4>
         <ul>
-          <li><a href="/gidsen/haakgaren-kiezen/">Haakgaren kiezen</a></li>
-          <li><a href="/gidsen/breigaren-kiezen/">Breigaren kiezen</a></li>
+          <li><a href="/beste-haakgaren-katoen/">Beste Haakgaren</a></li>
+          <li><a href="/beste-haaknaalden-beginners/">Beste Haaknaalden</a></li>
+          <li><a href="/beste-breigaren-merino/">Beste Breigaren</a></li>
+          <li><a href="/beste-breinaalden/">Beste Breinaalden</a></li>
+          <li><a href="/haak-accessoires/">Accessoires</a></li>
         </ul>
       </section>
+      
       <section>
-        <h4>Informatie</h4>
+        <h4>Hulp & Info</h4>
         <ul>
           <li><a href="/over-ons/">Over ons</a></li>
           <li><a href="/contact/">Contact</a></li>
-          <li><a href="/affiliate-disclaimer/">Affiliate disclaimer</a></li>
-          <li><a href="/privacy-beleid/">Privacy beleid</a></li>
+          <li><a href="/veelgestelde-vragen/">FAQ</a></li>
+          <li><a href="/beginners-gids/">Beginners Gids</a></li>
         </ul>
+        
+        <!-- Trust Badges -->
+        <div style="margin-top: 1.5rem;">
+          <h4 style="margin-bottom: 0.5rem; font-size: 0.9rem; color: #666;">Vertrouwd door</h4>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span style="background: var(--color-primary); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">Bol.com Partner</span>
+            <span style="background: var(--color-accent); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">2.000+ Makers</span>
+          </div>
+        </div>
+        
+        <!-- Legal Links -->
+        <div style="margin-top: 1rem;">
+          <h4 style="margin-bottom: 0.5rem; font-size: 0.9rem; color: #666;">Juridisch</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.3rem;"><a href="/affiliate-disclaimer/" style="color: #666; text-decoration: none; font-size: 0.8rem;">Affiliate disclaimer</a></li>
+            <li style="margin-bottom: 0.3rem;"><a href="/privacy-beleid/" style="color: #666; text-decoration: none; font-size: 0.8rem;">Privacy beleid</a></li>
+            <li style="margin-bottom: 0.3rem;"><a href="/algemene-voorwaarden/" style="color: #666; text-decoration: none; font-size: 0.8rem;">Algemene voorwaarden</a></li>
+          </ul>
+        </div>
       </section>
     </div>
     <div class="container footer__bottom">
-      <p>© 2025 Haken-Breien-Shop.nl – Deze website bevat affiliate links naar Bol.com en Amazon.</p>
+      <p>© 2025 Haken-Breien-Shop.nl – Deze website bevat affiliate links naar Bol.com en Amazon. | Gemaakt met ❤️ voor makers</p>
     </div>
   </footer>
 
