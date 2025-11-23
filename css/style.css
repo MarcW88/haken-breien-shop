@@ -169,13 +169,12 @@ a:hover {
    ========================================================================== */
 
 .site-header {
-  background: var(--drops-warm-white);
-  border-bottom: 1px solid var(--drops-soft-gray);
-  padding: var(--space-md) 0;
+  background: var(--drops-white);
+  border-bottom: 1px solid var(--drops-border);
+  padding: 24px 0;                    /* Padding vertical réduit */
   position: sticky;
   top: 0;
   z-index: 100;
-  backdrop-filter: blur(10px);
 }
 
 .header-content {
@@ -185,17 +184,17 @@ a:hover {
 }
 
 .logo {
-  font-family: var(--font-serif);
-  font-size: 1.75rem;
-  font-weight: 400;
-  color: var(--drops-charcoal);
+  font-family: var(--font-sans);      /* Drops utilise sans-serif pour le logo */
+  font-size: 1.125rem;                /* Plus petit */
+  font-weight: 700;                   /* Plus audacieux */
+  color: var(--drops-text);
   text-decoration: none;
-  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;             /* Très espacé */
 }
 
 .logo:hover {
-  color: var(--drops-accent-dusty);
-  border: none;
+  color: var(--drops-link-hover);
 }
 
 .main-nav ul {
@@ -232,39 +231,61 @@ a:hover {
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-xl);
+  grid-template-columns: 1fr 1fr;     /* 2 colonnes: texte + image */
+  gap: var(--space-xxl);
   align-items: center;
   position: relative;
   z-index: 2;
 }
 
-.hero h1 {
-  font-size: 4rem;
-  font-weight: 300;
-  color: var(--drops-charcoal);
-  margin-bottom: var(--space-md);
-  line-height: 1.1;
-}
-
-.hero-subtitle {
-  font-size: 1.25rem;
-  color: var(--drops-dark-gray);
-  line-height: 1.6;
-  margin-bottom: var(--space-lg);
+.hero-text {
   max-width: 600px;
 }
 
-.hero-image {
-  position: relative;
+.hero-subtitle {
+  font-size: 1rem;                    /* Plus petit */
+  line-height: 1.8;
+  font-weight: 300;
+  color: var(--drops-text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.usp-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin: var(--space-xl) 0;
+}
+
+.usp-pillar h3 {
+  font-size: 0.875rem;                /* Petit titre */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-xs);
+  color: var(--drops-text);
+}
+
+.usp-pillar p {
+  font-size: 0.75rem;                 /* Très petit */
+  color: var(--drops-text-secondary);
+  line-height: 1.8;
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
 }
 
 .hero-image img {
   width: 100%;
   height: auto;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-medium);
-  transition: transform 0.5s ease;
+  border-radius: var(--radius);       /* Pas de radius */
+}
+
+.hero-image {
+  position: relative;
 }
 
 .hero-image:hover img {
@@ -467,15 +488,16 @@ a:hover {
 
 .product-card .price {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
-  color: var(--drops-accent-dusty);
+  font-size: 1.25rem;                 /* Plus petit */
+  color: var(--drops-text);
   font-weight: 400;
   margin: var(--space-sm) 0;
 }
 
 .product-card .rating {
-  color: var(--drops-accent-coral);
+  color: var(--drops-text-secondary);
   margin-bottom: var(--space-sm);
+  font-size: 0.75rem;                 /* Plus petit */
 }
 
 /* ==========================================================================
