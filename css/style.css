@@ -1,33 +1,53 @@
 /*!
- * Haken Breien Shop - Drops Design Inspired CSS
+ * Haken Breien Shop - Vrai Style Drops Design
+ * Inspiré du design authentique de Drops Design
  */
 
+/* ==========================================================================
+   DROPS DESIGN AUTHENTIC PALETTE
+   ========================================================================== */
+
 :root {
-  --drops-primary: #2c5aa0;
-  --drops-secondary: #8b4513;
-  --drops-accent: #d4af37;
-  --drops-light-blue: #e6f2ff;
-  --drops-cream: #faf8f5;
-  --drops-warm-gray: #f5f3f0;
-  --drops-text-dark: #2c3e50;
-  --drops-text-medium: #5a6c7d;
-  --drops-border: #e1ddd7;
-  --drops-shadow: rgba(44, 90, 160, 0.1);
+  /* Couleurs authentiques Drops Design */
+  --drops-beige: #f7f5f3;
+  --drops-cream: #fefcfa;
+  --drops-warm-white: #faf8f6;
+  --drops-soft-gray: #e8e6e4;
+  --drops-medium-gray: #c4c2c0;
+  --drops-dark-gray: #6b6967;
+  --drops-charcoal: #3a3937;
+  --drops-accent-coral: #d4a574;
+  --drops-accent-sage: #a8b5a0;
+  --drops-accent-dusty: #c9a96e;
   
-  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --font-secondary: Georgia, 'Times New Roman', serif;
+  /* Typography Drops */
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
   
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
-  --spacing-xxl: 4rem;
+  /* Spacing harmonieux */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-xxl: 6rem;
   
-  --radius-sm: 4px;
-  --radius-md: 8px;
+  /* Border radius doux */
+  --radius-sm: 3px;
+  --radius-md: 6px;
   --radius-lg: 12px;
+  --radius-xl: 20px;
+  
+  /* Ombres subtiles */
+  --shadow-soft: 0 2px 12px rgba(58, 57, 55, 0.08);
+  --shadow-medium: 0 4px 20px rgba(58, 57, 55, 0.12);
+  --shadow-strong: 0 8px 32px rgba(58, 57, 55, 0.16);
 }
+
+/* ==========================================================================
+   BASE & RESET
+   ========================================================================== */
 
 * {
   box-sizing: border-box;
@@ -35,286 +55,664 @@
   padding: 0;
 }
 
-body {
-  font-family: var(--font-primary);
-  color: var(--drops-text-dark);
-  background-color: var(--drops-cream);
+html {
+  font-size: 16px;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--drops-charcoal);
+  background-color: var(--drops-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY DROPS STYLE
+   ========================================================================== */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-secondary);
-  color: var(--drops-text-dark);
-  font-weight: 600;
+  font-family: var(--font-serif);
+  font-weight: 400;
   line-height: 1.3;
-  margin-bottom: var(--spacing-sm);
+  color: var(--drops-charcoal);
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.02em;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
+h1 { 
+  font-size: 3.5rem; 
+  margin-bottom: var(--space-md);
+  font-weight: 300;
+}
+
+h2 { 
+  font-size: 2.5rem; 
+  margin-bottom: var(--space-md);
+}
+
+h3 { 
+  font-size: 1.875rem; 
+  margin-bottom: var(--space-sm);
+}
+
+h4 { 
+  font-size: 1.5rem; 
+}
+
+h5 { 
+  font-size: 1.25rem; 
+}
+
+h6 { 
+  font-size: 1.125rem; 
+}
 
 p {
-  margin-bottom: var(--spacing-sm);
-  color: var(--drops-text-medium);
+  margin-bottom: var(--space-sm);
+  color: var(--drops-dark-gray);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--drops-dark-gray);
+  font-weight: 300;
 }
 
 a {
-  color: var(--drops-primary);
+  color: var(--drops-accent-dusty);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
 }
 
 a:hover {
-  color: var(--drops-secondary);
-  text-decoration: underline;
+  color: var(--drops-charcoal);
+  border-bottom-color: var(--drops-accent-dusty);
 }
+
+/* ==========================================================================
+   LAYOUT CONTAINERS
+   ========================================================================== */
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 0 var(--space-md);
 }
 
+.container-narrow {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.container-wide {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* ==========================================================================
+   HEADER DROPS STYLE
+   ========================================================================== */
+
 .site-header {
-  background: white;
-  border-bottom: 1px solid var(--drops-border);
-  padding: var(--spacing-sm) 0;
+  background: var(--drops-warm-white);
+  border-bottom: 1px solid var(--drops-soft-gray);
+  padding: var(--space-md) 0;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 10px var(--drops-shadow);
+  backdrop-filter: blur(10px);
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: var(--spacing-sm);
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--drops-primary);
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--drops-charcoal);
   text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.logo:hover {
+  color: var(--drops-accent-dusty);
+  border: none;
 }
 
 .main-nav ul {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: var(--spacing-md);
-  flex-wrap: wrap;
+  gap: var(--space-lg);
+  align-items: center;
 }
 
 .main-nav a {
-  color: var(--drops-text-medium);
-  font-weight: 500;
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--radius-sm);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--drops-dark-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: var(--space-xs) 0;
+  border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
 }
 
-.main-nav a:hover {
-  background: var(--drops-light-blue);
-  color: var(--drops-primary);
-  text-decoration: none;
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--drops-charcoal);
+  border-bottom-color: var(--drops-accent-dusty);
 }
 
+/* ==========================================================================
+   HERO SECTION DROPS STYLE
+   ========================================================================== */
+
 .hero {
-  background: linear-gradient(135deg, var(--drops-light-blue) 0%, white 100%);
-  padding: var(--spacing-xxl) 0;
-  margin-bottom: var(--spacing-xl);
+  background: linear-gradient(135deg, var(--drops-warm-white) 0%, var(--drops-beige) 100%);
+  padding: var(--space-xxl) 0;
+  margin-bottom: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="0.5" fill="%23f7f5f3" opacity="0.3"/><circle cx="80" cy="40" r="0.3" fill="%23e8e6e4" opacity="0.2"/><circle cx="40" cy="80" r="0.4" fill="%23c4c2c0" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .hero-content {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-xl);
+  gap: var(--space-xl);
   align-items: center;
-  text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  color: var(--drops-primary);
-  margin-bottom: var(--spacing-md);
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--drops-charcoal);
+  margin-bottom: var(--space-md);
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--drops-dark-gray);
+  line-height: 1.6;
+  margin-bottom: var(--space-lg);
+  max-width: 600px;
+}
+
+.hero-image {
+  position: relative;
 }
 
 .hero-image img {
   width: 100%;
   height: auto;
   border-radius: var(--radius-lg);
-  box-shadow: 0 10px 30px var(--drops-shadow);
-  transition: transform 0.3s ease;
+  box-shadow: var(--shadow-medium);
+  transition: transform 0.5s ease;
 }
 
-.hero-image img:hover {
+.hero-image:hover img {
   transform: scale(1.02);
 }
 
+/* Desktop hero layout */
 @media (min-width: 1024px) {
   .hero-content {
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-xxl);
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--space-xxl);
     text-align: left;
   }
   
   .hero h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
 }
 
+/* Mobile hero */
 @media (max-width: 1023px) {
+  .hero {
+    padding: var(--space-xl) 0;
+    text-align: center;
+  }
+  
   .hero-image {
     order: -1;
   }
   
-  .hero-image img {
-    max-width: 400px;
-    margin: 0 auto;
-    display: block;
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
+/* ==========================================================================
+   BUTTONS DROPS STYLE
+   ========================================================================== */
+
 .btn {
   display: inline-block;
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
   font-weight: 500;
   text-decoration: none;
-  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+  left: 100%;
 }
 
 .btn-primary {
-  background: var(--drops-primary);
-  color: white;
+  background: var(--drops-charcoal);
+  color: var(--drops-cream);
+  border-color: var(--drops-charcoal);
 }
 
 .btn-primary:hover {
-  background: var(--drops-secondary);
-  color: white;
-  text-decoration: none;
+  background: var(--drops-accent-dusty);
+  border-color: var(--drops-accent-dusty);
+  color: var(--drops-charcoal);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px var(--drops-shadow);
+  box-shadow: var(--shadow-soft);
 }
 
 .btn-secondary {
-  background: white;
-  color: var(--drops-primary);
-  border: 2px solid var(--drops-primary);
+  background: transparent;
+  color: var(--drops-charcoal);
+  border-color: var(--drops-charcoal);
 }
 
 .btn-secondary:hover {
-  background: var(--drops-primary);
-  color: white;
-  text-decoration: none;
+  background: var(--drops-charcoal);
+  color: var(--drops-cream);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
 }
 
-.content-section {
-  margin-bottom: var(--spacing-xxl);
+.btn-outline {
+  background: transparent;
+  color: var(--drops-accent-dusty);
+  border-color: var(--drops-accent-dusty);
 }
 
-.section-header {
-  text-align: center;
-  margin-bottom: var(--spacing-xl);
+.btn-outline:hover {
+  background: var(--drops-accent-dusty);
+  color: var(--drops-cream);
 }
 
-.section-header h2 {
-  color: var(--drops-primary);
-  margin-bottom: var(--spacing-sm);
+.btn-large {
+  padding: var(--space-md) var(--space-xl);
+  font-size: 1.0625rem;
 }
+
+/* ==========================================================================
+   GRID SYSTEM DROPS
+   ========================================================================== */
 
 .grid {
   display: grid;
-  gap: var(--spacing-lg);
+  gap: var(--space-lg);
 }
 
-.grid-2 { grid-template-columns: repeat(2, 1fr); }
-.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-2 { 
+  grid-template-columns: repeat(2, 1fr); 
+}
+
+.grid-3 { 
+  grid-template-columns: repeat(3, 1fr); 
+}
+
+.grid-4 { 
+  grid-template-columns: repeat(4, 1fr); 
+}
+
+.grid-auto {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
 @media (max-width: 768px) {
-  .grid-2, .grid-3 {
+  .grid-2, .grid-3, .grid-4 {
     grid-template-columns: 1fr;
   }
 }
 
-.product-card, .parcours-card {
-  background: white;
+@media (min-width: 769px) and (max-width: 1023px) {
+  .grid-3, .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================================
+   CARDS DROPS STYLE
+   ========================================================================== */
+
+.card {
+  background: var(--drops-warm-white);
   border-radius: var(--radius-lg);
-  padding: var(--spacing-lg);
-  box-shadow: 0 5px 20px var(--drops-shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid var(--drops-border);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--drops-soft-gray);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.product-card:hover, .parcours-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px var(--drops-shadow);
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--drops-accent-coral), var(--drops-accent-sage), var(--drops-accent-dusty));
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.product-card h3, .parcours-card h3 {
-  color: var(--drops-primary);
-  margin-bottom: var(--spacing-sm);
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
 }
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card h3 {
+  color: var(--drops-charcoal);
+  margin-bottom: var(--space-sm);
+  font-size: 1.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-sm);
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card .price {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--drops-accent-dusty);
+  font-weight: 400;
+  margin: var(--space-sm) 0;
+}
+
+.product-card .rating {
+  color: var(--drops-accent-coral);
+  margin-bottom: var(--space-sm);
+}
+
+/* ==========================================================================
+   SECTIONS
+   ========================================================================== */
+
+.section {
+  padding: var(--space-xl) 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.section-header p {
+  font-size: 1.125rem;
+  color: var(--drops-dark-gray);
+}
+
+/* ==========================================================================
+   FOOTER DROPS STYLE
+   ========================================================================== */
 
 .site-footer {
-  background: var(--drops-primary);
-  color: white;
-  padding: var(--spacing-xl) 0 var(--spacing-lg);
-  margin-top: var(--spacing-xxl);
+  background: var(--drops-charcoal);
+  color: var(--drops-soft-gray);
+  padding: var(--space-xl) 0 var(--space-lg);
+  margin-top: var(--space-xxl);
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
 }
 
 .footer-section h4 {
-  color: white;
-  margin-bottom: var(--spacing-sm);
+  color: var(--drops-cream);
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+  font-weight: 400;
 }
 
 .footer-section ul {
   list-style: none;
-  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: var(--space-xs);
 }
 
 .footer-section a {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
+  color: var(--drops-soft-gray);
+  font-size: 0.9375rem;
+  transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-  color: white;
+  color: var(--drops-accent-dusty);
+  border: none;
 }
 
 .footer-bottom {
   text-align: center;
-  padding-top: var(--spacing-lg);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.8);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(196, 194, 192, 0.2);
+  color: var(--drops-medium-gray);
+  font-size: 0.875rem;
 }
 
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   UTILITIES
+   ========================================================================== */
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+
+.mt-0 { margin-top: 0; }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+
+.d-none { display: none; }
+.d-block { display: block; }
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--space-sm);
+  }
+  
+  .hero {
+    padding: var(--space-lg) 0;
+  }
+  
+  .card {
+    padding: var(--space-md);
+  }
+  
+  .site-header {
+    padding: var(--space-sm) 0;
   }
   
   .header-content {
     flex-direction: column;
-    text-align: center;
+    gap: var(--space-sm);
   }
   
   .main-nav ul {
-    justify-content: center;
+    gap: var(--space-md);
   }
+}
+
+/* ==========================================================================
+   ANIMATIONS SUBTILES
+   ========================================================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   SPECIAL DROPS ELEMENTS
+   ========================================================================== */
+
+.yarn-pattern {
+  position: relative;
+  overflow: hidden;
+}
+
+.yarn-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, var(--drops-accent-coral) 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, var(--drops-accent-sage) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.craft-border {
+  border: 2px solid var(--drops-soft-gray);
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+
+.craft-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--drops-accent-coral), var(--drops-accent-sage), var(--drops-accent-dusty));
+  border-radius: var(--radius-lg);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.craft-border:hover::before {
+  opacity: 1;
 }
