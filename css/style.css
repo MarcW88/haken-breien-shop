@@ -678,41 +678,157 @@ a:hover {
   overflow: hidden;
 }
 
-.yarn-pattern::before {
-  content: '';
-  position: absolute;
-  top: 0;
+/* ==========================================================================
+   SECTIONS & CONTENT DROPS STYLE
+   ========================================================================== */
+
+.content-section {
+  padding: var(--space-xxl) 0;
+  border-bottom: 1px solid var(--drops-border);
+}
+
+.content-section:last-child {
+  border-bottom: none;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: var(--drops-text-secondary);
+  margin-top: var(--space-sm);
+}
+
+.differentiation {
+  background: var(--drops-light-gray);
+  padding: var(--space-xl);
+  margin: var(--space-xl) 0;
+  border-radius: var(--radius);
+}
+
+.differentiation h3 {
+  margin-bottom: var(--space-md);
+}
+
+.transparency-note {
+  background: var(--drops-beige);
+  padding: var(--space-md);
+  margin-top: var(--space-md);
+  border-left: 3px solid var(--drops-link);
+}
+
+.transparency-note p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--drops-text-secondary);
+}
+
+/* Patterns décoratifs supprimés - non conformes au minimalisme Drops Design */
+
+/* ==========================================================================
+   FOOTER DROPS STYLE
+   ========================================================================== */
+
+.site-footer {
+  background: var(--drops-light-gray);  /* Pas noir - gris clair */
+  color: var(--drops-text);
+  padding: 64px 0 32px;
+  margin-top: var(--space-xxl);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.footer-section h4 {
+  font-family: var(--font-sans);       /* Pas serif */
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  color: var(--drops-text);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: var(--space-xs);
+}
+
+.footer-section a {
+  font-size: 0.75rem;
+  color: var(--drops-text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: var(--drops-text);
+}
+
+.footer-section p {
+  font-size: 0.75rem;
+  color: var(--drops-text-secondary);
+  line-height: 1.8;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--drops-border);
+  padding-top: var(--space-md);
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.75rem;
+  color: var(--drops-text-light);
+  margin: 0;
+}
+
+/* ==========================================================================
+   COOKIE BANNER & UTILITIES
+   ========================================================================== */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background-image: 
-    radial-gradient(circle at 25% 25%, var(--drops-accent-coral) 2px, transparent 2px),
-    radial-gradient(circle at 75% 75%, var(--drops-accent-sage) 1px, transparent 1px);
-  background-size: 50px 50px;
-  opacity: 0.1;
-  pointer-events: none;
+  background: var(--drops-text);
+  color: var(--drops-white);
+  padding: var(--space-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  font-size: 0.75rem;
 }
 
-.craft-border {
-  border: 2px solid var(--drops-soft-gray);
-  border-radius: var(--radius-lg);
-  position: relative;
+.cookie-banner button {
+  background: var(--drops-white);
+  color: var(--drops-text);
+  border: none;
+  padding: var(--space-xs) var(--space-md);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
 
-.craft-border::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, var(--drops-accent-coral), var(--drops-accent-sage), var(--drops-accent-dusty));
-  border-radius: var(--radius-lg);
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.craft-border:hover::before {
-  opacity: 1;
+.cookie-banner button:hover {
+  background: var(--drops-light-gray);
 }
