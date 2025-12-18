@@ -192,14 +192,25 @@
                 
                 <h3 style="font-size: 1.1rem; margin-bottom: 0.8rem; line-height: 1.3; font-weight: 600; color: #333;">${product.name}</h3>
                 
-                <p style="color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.6; flex-grow: 1;">
+                <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.6; flex-grow: 1;">
                     ${product.description}
                 </p>
                 
-                <a href="produits/${product.slug}.html" class="btn btn-primary" 
-                   style="display: block; text-align: center; padding: 0.8rem; background: #9C27B0; color: white; text-decoration: none; border-radius: 8px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;">
-                    Bekijk details
-                </a>
+                <div style="font-size: 1.8rem; font-weight: bold; color: #9C27B0; margin-bottom: 1rem; text-align: center;">
+                    €${product.price.toFixed(2)}
+                </div>
+                
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <a href="produits/${product.slug}.html" 
+                       style="display: block; text-align: center; padding: 0.8rem; background: #9C27B0; color: white; text-decoration: none; border-radius: 8px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;">
+                        Bekijk details
+                    </a>
+                    <a href="https://www.bol.com/nl/s/?searchtext=${encodeURIComponent(product.name.substring(0, 50))}" 
+                       target="_blank" rel="nofollow"
+                       style="display: block; text-align: center; padding: 0.8rem; background: white; color: #9C27B0; text-decoration: none; border-radius: 8px; font-size: 0.9rem; font-weight: 600; border: 2px solid #9C27B0; transition: all 0.3s ease;">
+                        Koop op bol.com →
+                    </a>
+                </div>
             </div>
         `;
         
