@@ -56,7 +56,7 @@
                     Haken & Breien Winkel
                 </h1>
                 <p style="font-size: 1.3rem; margin-bottom: 2rem; opacity: 0.95; font-weight: 500;">
-                    <span id="total-products">93</span> producten getest en geselecteerd door onze experts
+                    <span id="total-products">195</span> producten getest en geselecteerd door onze experts
                 </p>
                 
                 <!-- Barre recherche -->
@@ -88,7 +88,16 @@
         <!-- Filtres et tri -->
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding: 1.5rem; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); flex-wrap: wrap; gap: 1rem;">
             <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                <strong id="results-count">93 producten</strong>
+                <strong id="results-count">195 producten</strong>
+                
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <label>Categorie:</label>
+                    <select id="filter-categorie" onchange="applyFilters()" style="padding: 0.5rem; border: 2px solid #e0e0e0; border-radius: 8px; background: white;">
+                        <option value="alle">Alle</option>
+                        <option value="haakgaren">Haakgaren</option>
+                        <option value="haaknaalden">Haaknaalden</option>
+                    </select>
+                </div>
                 
                 <div style="display: flex; align-items: center; gap: 0.5rem;">
                     <input type="range" id="filter-prijs" min="0" max="150" value="150" onchange="applyFilters()" style="width: 120px;">
@@ -234,9 +243,14 @@
 
     function applyFilters() {
         const maxPrijs = document.getElementById('filter-prijs').value;
+        const categorie = document.getElementById('filter-categorie').value;
         document.getElementById('prijs-display').textContent = `€0-${maxPrijs}`;
         
-        filteredProducts = allProducts.filter(product => product.price <= maxPrijs);
+        filteredProducts = allProducts.filter(product => {
+            const prijsMatch = product.price <= maxPrijs;
+            const categorieMatch = categorie === 'alle' || product.categorie === categorie;
+            return prijsMatch && categorieMatch;
+        });
         
         currentPage = 1;
         displayProducts();
@@ -245,6 +259,7 @@
     
     function clearFilters() {
         document.getElementById('filter-prijs').value = '150';
+        document.getElementById('filter-categorie').value = 'alle';
         document.getElementById('sort-select').value = 'populair';
         applyFilters();
     }
