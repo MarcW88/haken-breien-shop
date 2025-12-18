@@ -20,20 +20,21 @@
     </style>
 </head>
 <body>
-    <!-- Header Navigation -->
-    <header class="site-header" style="background: white; padding: 1rem 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1rem; display: flex; justify-content: space-between; align-items: center;">
-            <a href="index.html" style="font-size: 1.5rem; font-weight: 700; color: #9C27B0; text-decoration: none;">Haken-Breien-Shop</a>
-            <nav>
-                <ul style="list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0; align-items: center;">
-                    <li><a href="index.html" style="text-decoration: none; color: #333;">Home</a></li>
-                    <li><a href="/haken/" style="text-decoration: none; color: #333;">Haken</a></li>
-                    <li><a href="/breien/" style="text-decoration: none; color: #333;">Breien</a></li>
-                    <li><a href="/patronen/" style="text-decoration: none; color: #333;">Patronen</a></li>
-                    <li><a href="/gidsen/" style="text-decoration: none; color: #333;">Gidsen</a></li>
-                    <li><a href="/materialen/" style="text-decoration: none; color: #333;">Materialen</a></li>
-                    <li><a href="/blog/" style="text-decoration: none; color: #333;">Blog</a></li>
-                    <li><a href="winkel.html" style="background: #9C27B0; color: white; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; text-decoration: none;">Winkel</a></li>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">Haken-Breien-Shop</a>
+            <nav class="main-nav">
+                <button class="main-nav__toggle" aria-expanded="false">Menu</button>
+                <ul class="main-nav__list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/haken/">Haken</a></li>
+                    <li><a href="/breien/">Breien</a></li>
+                    <li><a href="/patronen/">Patronen</a></li>
+                    <li><a href="/gidsen/">Gidsen</a></li>
+                    <li><a href="/materialen/">Materialen</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="winkel.html" style="background: #9C27B0; color: white; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600;">Winkel</a></li>
                 </ul>
             </nav>
         </div>
@@ -48,7 +49,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" style="background: linear-gradient(135deg, rgba(156, 39, 176, 0.92), rgba(123, 31, 162, 0.88)), url('https://images.unsplash.com/photo-1600166898405-da9535204843?w=1600&q=80') center/cover; min-height: 500px; display: flex; align-items: center; color: white; position: relative;">
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1600166898405-da9535204843?w=1600&q=80') center/cover; min-height: 500px; display: flex; align-items: center; color: white; position: relative;">
         <div class="container" style="text-align: center; position: relative; z-index: 2;">
             <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 3rem 2rem; max-width: 800px; margin: 0 auto; border: 1px solid rgba(255,255,255,0.2);">
                 <h1 style="font-size: 3.5rem; margin-bottom: 1rem; font-weight: 700; background: linear-gradient(45deg, #fff, #f0f0f0); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: none;">
@@ -175,32 +176,16 @@
         card.className = 'product-card';
         
         card.innerHTML = `
-            <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: relative; transition: all 0.3s ease; height: 100%;">
-                <div style="position: absolute; top: 15px; right: 15px; background: #9C27B0; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600;">
-                    #${position}
-                </div>
-                
+            <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
                 <img src="${product.image}" alt="${product.name}" 
                      style="width: 100%; height: 220px; object-fit: contain; object-position: center; background: #f8f9fa; border-radius: 8px; margin-bottom: 1rem;"
                      onerror="this.src='images/placeholder.jpg'">
                 
-                <h3 style="font-size: 1.1rem; margin-bottom: 0.8rem; line-height: 1.3; min-height: 2.6rem; overflow: hidden;">${product.name}</h3>
+                <h3 style="font-size: 1.1rem; margin-bottom: 0.8rem; line-height: 1.3; font-weight: 600; color: #333;">${product.name}</h3>
                 
-                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.8rem;">
-                    <div style="color: #ffd700; font-size: 1.1rem;">
-                        ${'★'.repeat(Math.floor(product.rating))}${'☆'.repeat(5 - Math.floor(product.rating))}
-                    </div>
-                    <span style="font-size: 0.9rem; color: #666;">${product.rating} (${product.reviews})</span>
-                </div>
-                
-                <p style="color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.4; max-height: 4.2rem; overflow: hidden;">
+                <p style="color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.6; flex-grow: 1;">
                     ${product.description}
                 </p>
-                
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-                    <span style="font-size: 1.4rem; font-weight: bold; color: #9C27B0;">€${product.price.toFixed(2)}</span>
-                    <span style="background: #e8f5e8; color: #2d5a2d; padding: 0.3rem 0.8rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600;">Op voorraad</span>
-                </div>
                 
                 <a href="produits/${product.slug}.html" class="btn btn-primary" 
                    style="display: block; text-align: center; padding: 0.8rem; background: #9C27B0; color: white; text-decoration: none; border-radius: 8px; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;">
