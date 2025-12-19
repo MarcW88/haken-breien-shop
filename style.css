@@ -1471,6 +1471,24 @@ a {
   color: white;
 }
 
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--coffee);
+  color: var(--coffee);
+  padding: var(--sp-3) var(--sp-6);
+  border-radius: var(--r-md);
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--coffee);
+  color: white;
+  transform: translateY(-1px);
+}
+
 .btn-outline {
   background: transparent;
   border: 2px solid var(--coffee);
@@ -1480,4 +1498,311 @@ a {
 .btn-outline:hover {
   background: var(--coffee);
   color: white;
+}
+
+/* ========================================
+   CONVERSION-FIRST UX COMPONENTS
+   Guide page decision-oriented elements
+   ======================================== */
+
+/* Decision Guide Block - Hero Section */
+.decision-guide {
+  background: var(--surface-soft);
+  border-radius: var(--r-lg);
+  padding: var(--sp-6);
+  margin-top: var(--sp-6);
+  box-shadow: var(--shadow-sm);
+}
+
+.decision-guide__prompt {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  font-weight: 600;
+  color: var(--coffee);
+  margin-bottom: var(--sp-4);
+  text-align: center;
+}
+
+.decision-guide__options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--sp-3);
+}
+
+.decision-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-4);
+  background: white;
+  border: 2px solid var(--border);
+  border-radius: var(--r-md);
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.decision-option:hover {
+  border-color: var(--coffee);
+  background: var(--coffee);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.decision-option__icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.decision-option__label {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+/* TOC Hints */
+.toc-hint {
+  font-size: var(--fs-xs);
+  color: var(--text-dim);
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Section Intro */
+.section-intro {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  color: var(--text-dim);
+  margin-bottom: var(--sp-6);
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Project Cards - Uniform Pattern */
+.project-card {
+  scroll-margin-top: 100px;
+}
+
+.project-card h3 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  margin-bottom: var(--sp-3);
+}
+
+.project-card__best {
+  color: var(--coffee);
+  font-size: 1.05rem;
+  margin-bottom: var(--sp-3);
+}
+
+.project-card__why {
+  margin: var(--sp-3) 0;
+  padding-left: var(--sp-5);
+}
+
+.project-card__why li {
+  margin-bottom: var(--sp-2);
+  color: var(--text-dim);
+}
+
+/* CTA Block - Intermediate */
+.cta-block {
+  background: linear-gradient(135deg, var(--coffee) 0%, #6d5843 100%);
+  color: white;
+  padding: var(--sp-10) var(--sp-6);
+  margin: var(--sp-12) 0;
+  border-radius: var(--r-lg);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.cta-block__content h2 {
+  color: white;
+  margin-bottom: var(--sp-3);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.cta-block__content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+  margin-bottom: var(--sp-6);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-block__buttons {
+  display: flex;
+  gap: var(--sp-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-block__buttons .btn-primary {
+  background: white;
+  color: var(--coffee);
+}
+
+.cta-block__buttons .btn-primary:hover {
+  background: var(--surface-soft);
+  color: var(--coffee);
+}
+
+.cta-block__buttons .btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.cta-block__buttons .btn-secondary:hover {
+  background: white;
+  color: var(--coffee);
+}
+
+/* Comparison Table */
+.comparison-table {
+  margin: var(--sp-6) 0;
+  overflow-x: auto;
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.comparison-table thead {
+  background: var(--coffee);
+  color: white;
+}
+
+.comparison-table th {
+  padding: var(--sp-4);
+  text-align: left;
+  font-weight: 600;
+  font-size: var(--fs-sm);
+}
+
+.comparison-table td {
+  padding: var(--sp-4);
+  border-bottom: 1px solid var(--border);
+  font-size: var(--fs-sm);
+}
+
+.comparison-table tbody tr:hover {
+  background: var(--surface-soft);
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Error Cards - With Solution Links */
+.error-card__action {
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--border);
+}
+
+.error-card__action a {
+  color: var(--coffee);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  transition: color 0.2s ease;
+}
+
+.error-card__action a:hover {
+  color: var(--cta);
+  text-decoration: underline;
+}
+
+/* FAQ Categories */
+.faq-category {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  color: var(--coffee);
+  margin-top: var(--sp-8);
+  margin-bottom: var(--sp-4);
+  padding-bottom: var(--sp-2);
+  border-bottom: 2px solid var(--border);
+}
+
+.faq-category:first-of-type {
+  margin-top: var(--sp-4);
+}
+
+/* FAQ CTA */
+.faq-cta {
+  background: var(--surface-soft);
+  padding: var(--sp-6);
+  border-radius: var(--r-md);
+  text-align: center;
+  margin-top: var(--sp-8);
+  border: 2px dashed var(--border);
+}
+
+.faq-cta p:first-child {
+  font-size: 1.125rem;
+  color: var(--coffee);
+  margin-bottom: var(--sp-2);
+}
+
+.faq-cta p:nth-child(2) {
+  color: var(--text-dim);
+  margin-bottom: var(--sp-5);
+}
+
+.faq-cta__buttons {
+  display: flex;
+  gap: var(--sp-3);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive - Conversion Components */
+@media (max-width: 768px) {
+  .decision-guide__options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .decision-option {
+    padding: var(--sp-3);
+  }
+  
+  .decision-option__icon {
+    font-size: 1.5rem;
+  }
+  
+  .decision-option__label {
+    font-size: var(--fs-xs);
+  }
+  
+  .cta-block {
+    padding: var(--sp-8) var(--sp-4);
+    margin: var(--sp-8) 0;
+  }
+  
+  .cta-block__buttons {
+    flex-direction: column;
+  }
+  
+  .comparison-table {
+    font-size: var(--fs-xs);
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: var(--sp-2);
+  }
+}
+
+@media (max-width: 480px) {
+  .decision-guide__options {
+    grid-template-columns: 1fr;
+  }
 }
