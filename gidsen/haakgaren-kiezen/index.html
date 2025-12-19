@@ -117,11 +117,11 @@
         </p>
         
         <!-- Author E-E-A-T -->
-        <div class="author-bio" style="display: flex; align-items: center; gap: 1rem; padding: 1.5rem; background: #f8f9fa; border-radius: 12px; margin: 1.5rem 0;">
-          <div style="width: 60px; height: 60px; border-radius: 50%; background: #9C27B0; color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; flex-shrink: 0;">SM</div>
-          <div>
-            <p style="margin: 0; font-weight: 600; color: #333;">Sophie van der Meer</p>
-            <p style="margin: 0; font-size: 0.9rem; color: #666;">Haakexpert & Docent • 12+ jaar ervaring • 3000+ studenten</p>
+        <div class="author-bio">
+          <div class="author-bio__avatar">SM</div>
+          <div class="author-bio__content">
+            <p class="author-bio__name">Sophie van der Meer</p>
+            <p class="author-bio__title">Haakexpert & Docent • 12+ jaar ervaring • 3000+ studenten</p>
           </div>
         </div>
       </header>
@@ -189,15 +189,14 @@
             </ul>
             
             <!-- Contextual CTA -->
-            <div style="margin-top: 1.5rem; padding: 1rem; background: #f0f7ff; border-left: 4px solid #9C27B0; border-radius: 8px;">
-              <p style="margin: 0 0 0.8rem 0; font-weight: 600; color: #333;">🎯 Onze top aanbeveling:</p>
-              <p style="margin: 0 0 1rem 0; font-size: 0.95rem; color: #666;">Micha Yarns - 10 bollen haakkatoen pakket (100% katoen)</p>
-              <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
-                <span style="font-size: 1.5rem; font-weight: 700; color: #9C27B0;">€25,95</span>
-                <span style="font-size: 0.9rem; color: #22c55e; font-weight: 600;">✓ Op voorraad</span>
+            <div class="context-cta">
+              <p class="context-cta__title">🎯 Onze top aanbeveling:</p>
+              <p class="context-cta__product">Micha Yarns - 10 bollen haakkatoen pakket (100% katoen)</p>
+              <div class="context-cta__pricing">
+                <span class="context-cta__price">€25,95</span>
+                <span class="context-cta__stock">✓ Op voorraad</span>
               </div>
-              <a href="/produits/micha-yarns---10-bollen-haakkatoen-pakket---100-katoen-haakgaren---10-x-50gram--.html" 
-                 style="display: inline-block; padding: 0.8rem 1.5rem; background: #9C27B0; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s;">
+              <a href="/produits/micha-yarns---10-bollen-haakkatoen-pakket---100-katoen-haakgaren---10-x-50gram--.html" class="context-cta__button">
                 Bekijk dit garen →
               </a>
             </div>
@@ -215,15 +214,14 @@
             </ul>
             
             <!-- Contextual CTA -->
-            <div style="margin-top: 1.5rem; padding: 1rem; background: #f0f7ff; border-left: 4px solid #9C27B0; border-radius: 8px;">
-              <p style="margin: 0 0 0.8rem 0; font-weight: 600; color: #333;">☀️ Perfect voor zomer:</p>
-              <p style="margin: 0 0 1rem 0; font-size: 0.95rem; color: #666;">Bamboe-katoen haakgaren - 5 bollen (70% bamboe, 30% katoen)</p>
-              <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
-                <span style="font-size: 1.5rem; font-weight: 700; color: #9C27B0;">€14,99</span>
-                <span style="font-size: 0.9rem; color: #22c55e; font-weight: 600;">✓ Op voorraad</span>
+            <div class="context-cta">
+              <p class="context-cta__title">☀️ Perfect voor zomer:</p>
+              <p class="context-cta__product">Bamboe-katoen haakgaren - 5 bollen (70% bamboe, 30% katoen)</p>
+              <div class="context-cta__pricing">
+                <span class="context-cta__price">€14,99</span>
+                <span class="context-cta__stock">✓ Op voorraad</span>
               </div>
-              <a href="/produits/5-bollen---70-bamboe-30-katoen-haakgaren---5-x-50gram---185meter---zwart-000---m.html" 
-                 style="display: inline-block; padding: 0.8rem 1.5rem; background: #9C27B0; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s;">
+              <a href="/produits/5-bollen---70-bamboe-30-katoen-haakgaren---5-x-50gram---185meter---zwart-000---m.html" class="context-cta__button">
                 Bekijk dit garen →
               </a>
             </div>
@@ -283,25 +281,25 @@
         <h2>3. Veelgemaakte fouten bij het kiezen van garen</h2>
         
         <div class="card">
-          <h3><span style="color: #ef4444; font-weight: 700;" aria-label="Fout">✗</span> Fout: Te dun garen voor amigurumi</h3>
+          <h3><span class="error-label" aria-label="Fout"></span>Fout: Te dun garen voor amigurumi</h3>
           <p><strong>Probleem:</strong> Vulling schijnt door de steken heen</p>
           <p><strong>Oplossing:</strong> Gebruik DK weight garen (3-4 mm naald) of dikker</p>
         </div>
         
         <div class="card">
-          <h3><span style="color: #ef4444; font-weight: 700;" aria-label="Fout">✗</span> Fout: Wol voor baby items</h3>
+          <h3><span class="error-label" aria-label="Fout"></span>Fout: Wol voor baby items</h3>
           <p><strong>Probleem:</strong> Kan kriebelen en allergische reacties veroorzaken</p>
           <p><strong>Oplossing:</strong> Kies speciaal baby garen of zacht katoen</p>
         </div>
         
         <div class="card">
-          <h3><span style="color: #ef4444; font-weight: 700;" aria-label="Fout">✗</span> Fout: Acryl voor zomerkleding</h3>
+          <h3><span class="error-label" aria-label="Fout"></span>Fout: Acryl voor zomerkleding</h3>
           <p><strong>Probleem:</strong> Niet ademend, kan klam aanvoelen</p>
           <p><strong>Oplossing:</strong> Gebruik katoen of katoen-mix voor zomerprojecten</p>
         </div>
         
         <div class="card">
-          <h3><span style="color: #ef4444; font-weight: 700;" aria-label="Fout">✗</span> Fout: Te weinig garen kopen</h3>
+          <h3><span class="error-label" aria-label="Fout"></span>Fout: Te weinig garen kopen</h3>
           <p><strong>Probleem:</strong> Kleurverschillen tussen partijen</p>
           <p><strong>Oplossing:</strong> Koop altijd 10-20% extra en controleer partijnummers</p>
         </div>
@@ -310,7 +308,7 @@
       <section id="kooptips">
         <h2>4. Praktische kooptips</h2>
         
-        <div class="grid grid--2">
+        <div class="grid-2">
           <div class="card">
             <h3>Waar kopen?</h3>
             <ul>
@@ -344,7 +342,7 @@
       </section>
 
       <!-- FAQ Section -->
-      <section id="faq" style="margin-top: 3rem;">
+      <section id="faq">
         <h2>Veelgestelde vragen over haakgaren</h2>
         
         <div class="card">
@@ -395,8 +393,8 @@
             Nu je weet welk garen je nodig hebt, bekijk onze shop voor concrete aanbevelingen:
           </p>
           <p>
-            <a href="/winkel.html" class="btn btn--primary">Bekijk alle haakgaren</a>
-            <a href="/beste-haaknaalden-beginners/" class="btn btn--outline">Beste haaknaalden</a>
+            <a href="/winkel.html" class="btn btn-primary">Bekijk alle haakgaren</a>
+            <a href="/beste-haaknaalden-beginners/" class="btn btn-outline">Beste haaknaalden</a>
           </p>
         </div>
       </footer>

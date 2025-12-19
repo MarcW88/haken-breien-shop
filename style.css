@@ -1296,3 +1296,171 @@ a {
 .product-card:not(:hover) {
   will-change: auto;
 }
+
+/* ========================================
+   GUIDE PAGE COMPONENTS
+   ======================================== */
+
+/* Author Bio - E-E-A-T Component */
+.author-bio {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  padding: var(--sp-6);
+  background: var(--surface-soft);
+  border-radius: var(--r-xl);
+  margin: var(--sp-6) 0;
+  border-left: 4px solid var(--coffee);
+}
+
+.author-bio__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--coffee);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: var(--fs-2xl);
+  flex-shrink: 0;
+}
+
+.author-bio__content {
+  flex: 1;
+}
+
+.author-bio__name {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text);
+  font-size: var(--fs-lg);
+}
+
+.author-bio__title {
+  margin: var(--sp-1) 0 0 0;
+  font-size: var(--fs-sm);
+  color: var(--text-dim);
+}
+
+/* Context CTA - Product Recommendation Block */
+.context-cta {
+  margin-top: var(--sp-6);
+  padding: var(--sp-6);
+  background: var(--surface-soft);
+  border-left: 4px solid var(--coffee);
+  border-radius: var(--r-xl);
+}
+
+.context-cta__title {
+  margin: 0 0 var(--sp-3) 0;
+  font-weight: 600;
+  color: var(--text);
+  font-size: var(--fs-lg);
+}
+
+.context-cta__product {
+  margin: 0 0 var(--sp-4) 0;
+  font-size: var(--fs-base);
+  color: var(--text-dim);
+}
+
+.context-cta__pricing {
+  display: flex;
+  gap: var(--sp-4);
+  align-items: center;
+  margin-bottom: var(--sp-4);
+}
+
+.context-cta__price {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  color: var(--coffee);
+}
+
+.context-cta__stock {
+  font-size: var(--fs-sm);
+  color: var(--success);
+  font-weight: 600;
+}
+
+.context-cta__button {
+  display: inline-block;
+  padding: var(--sp-3) var(--sp-6);
+  background: var(--cta);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--r-lg);
+  font-weight: 600;
+  transition: background-color 0.2s ease,
+              transform 0.2s ease;
+}
+
+.context-cta__button:hover {
+  background: var(--cta-hover);
+  transform: translateY(-1px);
+  color: white;
+}
+
+/* Error Label - Mistakes Section */
+.error-label {
+  color: var(--error);
+  font-weight: 700;
+}
+
+.error-label::before {
+  content: "✗ ";
+}
+
+/* Grid variants - Unified notation */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-8);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-8);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-8);
+}
+
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Button variants - Unified notation */
+.btn-primary {
+  background: var(--cta);
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background: var(--cta-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  color: white;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--coffee);
+  color: var(--coffee);
+}
+
+.btn-outline:hover {
+  background: var(--coffee);
+  color: white;
+}
