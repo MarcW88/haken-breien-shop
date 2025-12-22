@@ -343,6 +343,8 @@ h4 {
   border-radius: var(--r-xl);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
+  padding: var(--sp-6);
+  margin-bottom: var(--sp-6);
 }
 
 .card:hover {
@@ -1389,24 +1391,26 @@ a {
 .context-cta__button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--sp-2);
-  padding: var(--sp-3) var(--sp-6);
+  padding: var(--sp-4) var(--sp-8);
   background: var(--cta);
   color: white;
   text-decoration: none;
   border-radius: var(--r-lg);
-  font-weight: 600;
-  font-size: var(--fs-sm);
-  box-shadow: var(--shadow-sm);
+  font-weight: 700;
+  font-size: var(--fs-base);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: background-color 0.2s ease,
               transform 0.2s ease,
               box-shadow 0.2s ease;
+  width: 100%;
 }
 
 .context-cta__button:hover {
   background: var(--cta-hover);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   color: white;
 }
 
@@ -1431,22 +1435,28 @@ a {
 }
 
 /* Grid variants - Unified notation */
+.grid--2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-10);
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--sp-8);
+  gap: var(--sp-10);
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--sp-8);
+  gap: var(--sp-10);
 }
 
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--sp-8);
+  gap: var(--sp-10);
 }
 
 @media (max-width: 768px) {
@@ -1573,11 +1583,20 @@ a {
 .section-intro {
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   color: var(--text-dim);
-  margin-bottom: var(--sp-6);
+  margin-bottom: var(--sp-8);
   text-align: center;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Section Spacing */
+section {
+  margin-bottom: var(--sp-16);
+}
+
+section h2 {
+  margin-bottom: var(--sp-6);
 }
 
 /* Project Cards - Uniform Pattern */
@@ -1642,6 +1661,10 @@ a {
 .cta-block__buttons .btn-primary {
   background: white;
   color: var(--coffee);
+  padding: var(--sp-4) var(--sp-10);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .cta-block__buttons .btn-primary:hover {
@@ -1653,6 +1676,9 @@ a {
   background: transparent;
   border: 2px solid white;
   color: white;
+  padding: var(--sp-4) var(--sp-10);
+  font-size: var(--fs-lg);
+  font-weight: 700;
 }
 
 .cta-block__buttons .btn-secondary:hover {
@@ -1739,10 +1765,10 @@ a {
 /* FAQ CTA */
 .faq-cta {
   background: var(--surface-soft);
-  padding: var(--sp-6);
-  border-radius: var(--r-md);
+  padding: var(--sp-8);
+  border-radius: var(--r-lg);
   text-align: center;
-  margin-top: var(--sp-8);
+  margin-top: var(--sp-10);
   border: 2px dashed var(--border);
 }
 
@@ -1759,9 +1785,16 @@ a {
 
 .faq-cta__buttons {
   display: flex;
-  gap: var(--sp-3);
+  gap: var(--sp-4);
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.faq-cta__buttons .btn {
+  padding: var(--sp-4) var(--sp-10);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  min-width: 200px;
 }
 
 /* Responsive - Conversion Components */
