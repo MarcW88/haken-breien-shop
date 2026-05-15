@@ -37,41 +37,37 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1586281010595-0dac6b8b6e7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover; color: white; padding: 80px 0; margin-bottom: 3rem;">
-    <div class="container">
-      <div class="hero-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
-        <p class="hero-kicker" style="font-size: 0.9rem; font-weight: 600; color: #f0f0f0; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem;">Haken & Breien Shop</p>
-        <h1 style="font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Alles voor Jouw Haak- en Breiproject</h1>
-        <p style="font-size: 1.3rem; margin-bottom: 1.5rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Direct leverbaar, gratis verzending vanaf €30. Topkwaliteit garen, naalden en patronen.</p>
+  <section style="background: #f5f0ea; padding: 4.5rem 0;">
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; max-width: 1100px;">
+      <div>
+        <p style="font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.25rem; color: var(--color-primary);">
+          Onafhankelijke gids voor haak- en breiproducten
+        </p>
+        <h1 style="font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 400; line-height: 1.15; color: var(--text); margin-bottom: 1.5rem;">
+          Alles voor jouw haak- en breiprojecten
+        </h1>
+        <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); max-width: 460px;">
+          Direct leverbaar, gratis verzending vanaf €30. Topkwaliteit garen, naalden en patronen voor elk niveau.
+        </p>
         
-        <!-- Trust Badges -->
-        <div class="trust-badges" style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
-          <div class="trust-badge" style="background: rgba(255,255,255,0.95); color: #333; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600;">
-            Gratis verzending vanaf €30
-          </div>
-          <div class="trust-badge" style="background: rgba(255,255,255,0.95); color: #333; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600;">
-            1-3 werkdagen levertijd
-          </div>
-          <div class="trust-badge" style="background: rgba(255,255,255,0.95); color: #333; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600;">
-            338+ producten
-          </div>
-        </div>
-        
-        <!-- Search Bar -->
-        <div style="max-width: 500px; margin: 0 auto 2rem; position: relative;">
-          <input type="text" placeholder="Zoek garen, naalden, patronen..." 
-                 style="width: 100%; padding: 1.2rem 1.5rem; border: none; border-radius: 30px; font-size: 1.1rem; box-shadow: 0 8px 25px rgba(0,0,0,0.3); background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);">
-        </div>
-        
-        <!-- Double CTA -->
-        <div class="hero-cta" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-          <a href="/winkel.html" class="btn btn--cta" style="background: var(--color-primary); border: none; padding: 1rem 2rem; font-size: 1.1rem; border-radius: 8px; text-decoration: none; color: white; font-weight: 600;">
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a class="btn btn--primary" href="/winkel.html" style="background: var(--color-primary); color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600;">
             Bekijk Alle Producten
           </a>
-          <a href="/garen/" class="btn btn--secondary" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600;">
+          <a class="btn btn--secondary" href="/garen/" style="background: white; color: var(--color-primary); padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; border: 2px solid var(--color-primary);">
             Bekijk Garen
           </a>
         </div>
+        
+        <div style="display: flex; gap: 2rem; margin-top: 2.5rem; font-size: 0.8rem; color: var(--text-light);">
+          <span>338+ producten</span>
+          <span>Gratis verzending vanaf €30</span>
+          <span>1-3 werkdagen levertijd</span>
+        </div>
+      </div>
+      <div style="position: relative;">
+        <img alt="Haak- en breiproducten" src="https://images.unsplash.com/photo-1586281010595-0dac6b8b6e7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+             style="width: 100%; border-radius: 0.5rem; aspect-ratio: 4/3; object-fit: cover; background: #fafafa;"/>
       </div>
     </div>
   </section>
@@ -85,7 +81,6 @@
         
         <div class="grid grid--3" style="margin-bottom: 3rem;">
           <article class="card" style="position: relative; overflow: hidden; cursor: pointer; transition: transform 0.3s ease;">
-            <img src="https://images.unsplash.com/photo-1586281010595-0dac6b8b6e7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80" alt="Garen & Wol" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
             <div style="padding: 1.5rem;">
               <h3 style="margin: 0 0 0.5rem 0; color: var(--color-primary);">Garen & Wol</h3>
               <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Haakgaren, breigaren, katoen, wol en meer</p>
@@ -94,7 +89,6 @@
           </article>
           
           <article class="card" style="position: relative; overflow: hidden; cursor: pointer; transition: transform 0.3s ease;">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80" alt="Naalden & Accessoires" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
             <div style="padding: 1.5rem;">
               <h3 style="margin: 0 0 0.5rem 0; color: var(--color-accent);">Naalden & Accessoires</h3>
               <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Haaknaalden, breinaalden, steekmarkeerders</p>
@@ -103,7 +97,6 @@
           </article>
           
           <article class="card" style="position: relative; overflow: hidden; cursor: pointer; transition: transform 0.3s ease;">
-            <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80" alt="Patronen" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
             <div style="padding: 1.5rem;">
               <h3 style="margin: 0 0 0.5rem 0; color: #28a745;">Patronen</h3>
               <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Haak- en breipatronen voor elk niveau</p>
@@ -114,7 +107,6 @@
         
         <div class="grid grid--2" style="margin-bottom: 3rem;">
           <article class="card" style="position: relative; overflow: hidden; cursor: pointer; transition: transform 0.3s ease;">
-            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80" alt="Kits & Pakketten" loading="lazy" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px;">
             <div style="padding: 1.5rem;">
               <h3 style="margin: 0 0 0.5rem 0; color: #9C27B0;">Kits & Pakketten</h3>
               <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Starterskits en complete projectpakketten</p>
@@ -123,7 +115,6 @@
           </article>
           
           <article class="card" style="position: relative; overflow: hidden; cursor: pointer; transition: transform 0.3s ease;">
-            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80" alt="Accessoires & Opberging" loading="lazy" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px;">
             <div style="padding: 1.5rem;">
               <h3 style="margin: 0 0 0.5rem 0; color: #ff9800;">Accessoires & Opberging</h3>
               <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Naaldencases, projecttassen en wolgidsen</p>
@@ -140,7 +131,6 @@
         <div class="grid grid--3" style="margin-bottom: 3rem;">
           <div class="product-card card" style="position: relative;">
             <div class="product-badge" style="position: absolute; top: 10px; left: 10px; background: var(--color-primary); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; z-index: 2;">#1 Bestseller</div>
-            <img src="https://images.unsplash.com/photo-1586281010595-0dac6b8b6e7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Premium Katoenen Haakgaren Set" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
             <h4 style="margin: 1rem 0 0.5rem 0;">Premium Katoenen Haakgaren Set</h4>
             <div class="rating" style="margin-bottom: 0.5rem;">
               <span style="color: #ffd700;">★★★★★</span>
@@ -165,7 +155,6 @@
 
           <div class="product-card card" style="position: relative;">
             <div class="product-badge" style="position: absolute; top: 10px; left: 10px; background: var(--color-accent); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; z-index: 2;">Klantfavoriet</div>
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Complete Haaknaald Set" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
             <h4 style="margin: 1rem 0 0.5rem 0;">Complete Haaknaald Set</h4>
             <div class="rating" style="margin-bottom: 0.5rem;">
               <span style="color: #ffd700;">★★★★★</span>
@@ -190,7 +179,6 @@
 
           <div class="product-card card" style="position: relative;">
             <div class="product-badge" style="position: absolute; top: 10px; left: 10px; background: #28a745; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; z-index: 2;">Budget Tip</div>
-            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Haak Accessoires Kit" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
             <h4 style="margin: 1rem 0 0.5rem 0;">Haak Accessoires Kit</h4>
             <div class="rating" style="margin-bottom: 0.5rem;">
               <span style="color: #ffd700;">★★★★☆</span>
@@ -215,7 +203,6 @@
 
           <div class="product-card card" style="position: relative;">
             <div class="product-badge" style="position: absolute; top: 10px; left: 10px; background: var(--color-accent); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; z-index: 2;">#1 Bestseller</div>
-            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Zachte Wollen Breigaren" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
             <h4 style="margin: 1rem 0 0.5rem 0;">Zachte Wollen Breigaren</h4>
             <div class="rating" style="margin-bottom: 0.5rem;">
               <span style="color: #ffd700;">★★★★★</span>
@@ -240,7 +227,6 @@
 
           <div class="product-card card" style="position: relative;">
             <div class="product-badge" style="position: absolute; top: 10px; left: 10px; background: var(--color-primary); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; z-index: 2;">Eco-Friendly</div>
-            <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Bamboe Breinaalden Set" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
             <h4 style="margin: 1rem 0 0.5rem 0;">Bamboe Breinaalden Set</h4>
             <div class="rating" style="margin-bottom: 0.5rem;">
               <span style="color: #ffd700;">★★★★☆</span>
@@ -265,7 +251,6 @@
 
           <div class="product-card card" style="position: relative;">
             <div class="product-badge" style="position: absolute; top: 10px; left: 10px; background: #dc3545; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600; z-index: 2;">Premium</div>
-            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Breimachine voor Beginners" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
             <h4 style="margin: 1rem 0 0.5rem 0;">Breimachine voor Beginners</h4>
             <div class="rating" style="margin-bottom: 0.5rem;">
               <span style="color: #ffd700;">★★★★★</span>
@@ -324,21 +309,18 @@
         
         <div class="grid grid--3">
           <article class="card">
-            <img src="https://images.unsplash.com/photo-1586281010595-0dac6b8b6e7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80" alt="Haakgaren kiezen" loading="lazy" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
             <h3 style="font-size: 1.1rem;">Welk garen voor amigurumi?</h3>
             <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Ontdek welk garen het beste werkt voor amigurumi projecten.</p>
             <a href="/blog/welk-garen-amigurumi/" class="btn btn--link">Lees meer →</a>
           </article>
           
           <article class="card">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80" alt="Haaknaalden beginners" loading="lazy" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
             <h3 style="font-size: 1.1rem;">Haaknaalden voor beginners</h3>
             <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Welke naalden heb je nodig om te beginnen met haken?</p>
             <a href="/blog/haaknaalden-beginners/" class="btn btn--link">Lees meer →</a>
           </article>
           
           <article class="card">
-            <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200&q=80" alt="Gratis patronen" loading="lazy" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
             <h3 style="font-size: 1.1rem;">Gratis patronen</h3>
             <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Honderden gratis haak- en breipatronen voor elk niveau.</p>
             <a href="/blog/gratis-patronen/" class="btn btn--link">Bekijk patronen →</a>
