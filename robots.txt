@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://haken-breien-shop.nl/sitemap.xml
