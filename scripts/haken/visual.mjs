@@ -2,7 +2,7 @@ import { chromium } from '@playwright/test';
 import { spawn } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
-const slug = (process.env.HAKEN_PAGE || '').trim().replace(/^\\/+|\\/+$/g, '');
+const slug = (process.env.HAKEN_PAGE || '').trim().replace(/^\/+|\/+$/g, '');
 if (slug.includes('/') || slug === '..') throw Error('Expected one page slug');
 const pages = slug ? ['/haken/' + (slug === 'haken' ? '' : slug + '/')] : ['/','/haken/','/haken/voor-beginners/','/haken/steken/','/haken/technieken/','/haken/projecten/'];
 const output = '.artifacts/haken/screenshots';
@@ -20,7 +20,7 @@ try {
       if(bad)throw Error(route+' has horizontal overflow at '+width);
       const title=await page.title();
       if(!title)throw Error(route+' missing title');
-      await page.screenshot({path:path.join(output,route.replace(/\\W+/g,'-')+'-'+width+'.png'),fullPage:true});
+      await page.screenshot({path:path.join(output,route.split('/').filter(Boolean).join('-')+'-'+width+'.png'),fullPage:true});
     }
     await page.close();
   }
