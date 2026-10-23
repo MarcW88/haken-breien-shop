@@ -1,0 +1,48 @@
+name: Import Bloc Notes Numerique agents and workflows
+on:
+  push:
+    paths:
+      - '.github/workflows/import-bloc-notes.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download source repository
+        run: git clone --depth=1 --branch main https://github.com/MarcW88/bloc-notes-numerique.git /tmp/bloc-notes-source
+      - name: Copy complete agent and workflow infrastructure
+        shell: bash
+        run: |
+          set -euo pipefail
+          src=/tmp/bloc-notes-source
+          mkdir -p .agents .github/workflows
+          cp -a "$src/.agents/." .agents/
+          cp -a "$src/.github/workflows/." .github/workflows/
+          for directory in scripts tests; do
+            if [ -d "$src/$directory" ]; then
+              mkdir -p "$directory"
+              cp -a "$src/$directory/." "$directory/"
+            fi
+          done
+          cp "$src/AGENTS.md" AGENTS.md
+          find "$src" -maxdepth 1 -type f \( -name '*.py' -o -name '*.yaml' -o -name '*.yml' -o -name '*.json' -o -name '*.mjs' -o -name '*.sh' \) ! -name 'package-lock.json' ! -name 'package.json' -print0 |
+            while IFS= read -r -d '' f; do cp "$f" ./; done
+          echo 'Source files copied; existing website, HTML, CSS, and navigation retained.'
+      - name: Commit imported infrastructure
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .agents .github/workflows scripts tests AGENTS.md || true
+          find . -maxdepth 1 -type f \( -name '*.py' -o -name '*.yaml' -o -name '*.yml' -o -name '*.json' -o -name '*.mjs' -o -name '*.sh' \) ! -name 'package-lock.json' ! -name 'package.json' -print0 | xargs -0 -r git add --
+          if ! git diff --cached --quiet; then
+            git commit -m "Import Bloc Notes Numerique agent workflows and orchestration"
+            git push origin HEAD:main
+          else
+            echo "No differences to commit"
+          fi
