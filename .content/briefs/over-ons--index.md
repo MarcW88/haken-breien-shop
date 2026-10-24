@@ -1,0 +1,2 @@
+# Over ons SEO/GEO editorial brief — 2026-10-24
+DEEP_REWRITE: original placeholder, duplicate document, short metadata, false fr-FR hreflang. Intent trust and editorial transparency. Do not invent site owners, staff biographies, first-hand product tests or business registration. Contents: how site is organized, how guidance is qualified, affiliate disclosure and contact paths. Preserve original noindex,follow and self-canonical. Content-and-copy, fact-check, humanizer, general-writing, anti-ai-slop, on-page and internal-link checks documented. No other sections modified.

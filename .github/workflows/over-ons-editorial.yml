@@ -1,0 +1,23 @@
+name: Over ons editorial technical validation
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'over-ons/**'
+      - 'scripts/over-ons/**'
+      - '.content/briefs/over-ons--**'
+      - '.content/reviews/over-ons--**'
+      - '.github/workflows/over-ons-editorial.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate Over ons
+        run: python scripts/over-ons/validate.py
