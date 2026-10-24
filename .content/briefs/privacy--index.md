@@ -1,0 +1,2 @@
+# /privacy/ SEO/GEO editorial brief — 2026-10-24
+DEEP_REWRITE placeholder double document and false fr-FR hreflang. Trust/visitor transparency intent. No verified controller, legal contact, cookie inventory, hosting logs, retention, legal bases or recipient list: do not fabricate. Clearly state incomplete legal information and required follow-up. Describe GDPR rights generically without representing actual compliance. Preserve noindex,follow. Only target page and its editorial/CI records.
