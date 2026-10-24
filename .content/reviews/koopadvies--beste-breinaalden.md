@@ -11,3 +11,6 @@ Status: PENDING scoped CI and owner manual acceptance.
 - internal-linking-audit: links to existing materials, buying, knitting, yarn guides.
 - technical: one doctype/H1, correct Dutch canonical, false fr-FR removed and noindex,follow unchanged.
 - PUBLISH_REVIEW: wait for technical CI + owner approval. CI is not independent agent execution.
+
+## Owner-approved content closure — 2026-10-24
+User approved Beste breinaalden. Koopadvies scoped run 40109882203 SUCCESS and Haken checks run 40109882170 SUCCESS. PUBLISH_REVIEW PASS — HUMAN_APPROVED FOR CONTENT. Pages deployment 40109881853 was CANCELLED by later release, so individual deployment not attested. Preserve original noindex,follow.
