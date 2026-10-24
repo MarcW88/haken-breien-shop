@@ -10,3 +10,6 @@ Status: pending machine CI and owner approval.
 - internal-linking-audit: topic guides for crochet, yarn and amigurumi, and relevant koopadvies pages.
 - seo-technical: unique title/description, self canonical, one DOCTYPE/H1, nl, removed false fr-FR and preserved noindex,follow.
 - PUBLISH_REVIEW: pending CI then human acceptance. Machine QA does not attest independent LLM skill execution.
+
+## PUBLISH_REVIEW closure — 2026-10-24
+PASS — HUMAN_APPROVED; owner explicitly approved Beste haaknaalden. GitHub Koopadvies run 40109651208 SUCCESS, Haken editorial 40109651233 SUCCESS, Pages deployment 40109649973 SUCCESS, for commit 0d278d57a7628e519a3646abc5f7bc3afa403621. noindex,follow preserved. Separate AI skills are documented editorial passes, not independently executed CI agents.
