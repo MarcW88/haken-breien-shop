@@ -11,3 +11,6 @@ Status: QA_IN_PROGRESS pending technical CI and manual approval.
 - seo-technical: single doctype/H1, self canonical, nl, noindex unchanged; erroneous fr-FR gone.
 - editorial-qa: no copied patterns; numeric gauge 20 vs 24 per 10cm direction consistent; no unverified blanket legal claims.
 - PUBLISH_REVIEW: waits for GitHub validation and owner acceptance; technical CI is not independent model-agent proof.
+
+## Owner approval closure — 2026-10-24
+User explicitly approved Gratis patronen. Patronen editorial validation 40094341550 SUCCESS and Haken regression 40094341504 SUCCESS. PUBLISH_REVIEW PASS — HUMAN_APPROVED FOR CONTENT. GitHub Pages run 40094340932 had not completed at last prepublication check, so not attested as success. Keep noindex,follow.
