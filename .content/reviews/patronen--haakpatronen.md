@@ -10,3 +10,6 @@ Status: pending machine QA and human acceptance.
 - seo-onpage and seo-technical: unique title/meta/H1, single DOCTYPE, correct canonical and nl; false fr-FR removed.
 - editorial-qa: no copied proprietary pattern, no unsupported first-hand trials, techniques not described as universal.
 - PUBLISH_REVIEW: owner gate remains pending; noindex,follow kept. CI only verifies technical aspects, not independent editorial LLM invocation.
+
+## Clôture manuelle — 2026-10-24
+User explicitly approved /patronen/haakpatronen/. Run 40093662765 editorial technical validation SUCCESS; Pages 40093662531 SUCCESS. Decision **PASS — HUMAN_APPROVED FOR CONTENT**. Existing noindex,follow preserved.
