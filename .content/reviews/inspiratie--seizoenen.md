@@ -10,3 +10,6 @@ Status: PENDING technical CI and owner acceptance.
 - internal-linking-audit: links to existing knitting, crochet, yarn and gifts guides.
 - seo-technical: single DOCTYPE/H1, descriptive title/meta, self-canonical, nl, no false fr-FR; noindex,follow preserved.
 - PUBLISH_REVIEW: pending CI and explicit owner approval. CI tests HTML, not independent editorial agent execution.
+
+## Owner approval and technical closure — 2026-10-24
+Owner approved Seizoenen. Inspiratie validation run 40112061102 SUCCESS; Haken run 40112061077 SUCCESS. PASS — HUMAN_APPROVED FOR CONTENT. Pages run 40112060846 was in_progress at last check, so deployment is not independently attested here. noindex,follow unchanged.

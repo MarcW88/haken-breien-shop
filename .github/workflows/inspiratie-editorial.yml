@@ -21,5 +21,5 @@ jobs:
           python-version: '3.12'
       - name: Validate scoped Inspiratie HTML
         env:
-          INSPIRATIE_PAGE: seizoenen
+          INSPIRATIE_PAGE: trends
         run: python scripts/inspiratie/validate.py
