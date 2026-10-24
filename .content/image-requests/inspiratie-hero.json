@@ -1,0 +1,20 @@
+{
+  "id": "inspiratie-hero",
+  "page": "inspiratie/index.html",
+  "slot": "hero",
+  "required": true,
+  "reason": "Photographie éditoriale illustrative pour la section inspiratie, à valider avant génération payante.",
+  "allow_ai_generation": false,
+  "truth_risk": "LOW",
+  "status": "BLOCKED",
+  "marker": "<!-- EDITORIAL_IMAGE:inspiratie-hero -->",
+  "output_path": "assets/generated/inspiratie-hero.webp",
+  "prompt": "Natural-light editorial photograph of small handmade crocheted gift pouch, simple knitted scarf and seasonal yarn project in a cozy home craft space, realistic stitch texture and proportions, calm colors, no text or brands, photorealistic editorial documentary craft photography, no fake testing claims, no watermark",
+  "alt": "Fotografische illustratie voor inspiratie: materialen en handwerk voor haken of breien",
+  "caption": "",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}

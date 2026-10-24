@@ -1,0 +1,20 @@
+{
+  "id": "breien-hero",
+  "page": "breien/index.html",
+  "slot": "hero",
+  "required": true,
+  "reason": "Photographie éditoriale illustrative pour la section breien, à valider avant génération payante.",
+  "allow_ai_generation": false,
+  "truth_risk": "LOW",
+  "status": "BLOCKED",
+  "marker": "<!-- EDITORIAL_IMAGE:breien-hero -->",
+  "output_path": "assets/generated/breien-hero.webp",
+  "prompt": "Editorial natural-light photograph of hands knitting a simple garter-stitch square on two bamboo knitting needles, correct loops on both needles and realistic yarn tension, cozy neutral background, no logos or lettering, photorealistic editorial documentary craft photography, no fake testing claims, no watermark",
+  "alt": "Fotografische illustratie voor breien: materialen en handwerk voor haken of breien",
+  "caption": "",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}

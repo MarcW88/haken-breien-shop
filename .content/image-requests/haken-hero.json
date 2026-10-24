@@ -1,0 +1,20 @@
+{
+  "id": "haken-hero",
+  "page": "haken/index.html",
+  "slot": "hero",
+  "required": true,
+  "reason": "Photographie éditoriale illustrative pour la section haken, à valider avant génération payante.",
+  "allow_ai_generation": false,
+  "truth_risk": "LOW",
+  "status": "BLOCKED",
+  "marker": "<!-- EDITORIAL_IMAGE:haken-hero -->",
+  "output_path": "assets/generated/haken-hero.webp",
+  "prompt": "Editorial craft photography of hands making a simple single crochet stitch using an unbranded wooden hook and cotton yarn, accurate loop placement and realistic hand anatomy, naturally lit tabletop, earthy palette, no writing or logos, photorealistic editorial documentary craft photography, no fake testing claims, no watermark",
+  "alt": "Fotografische illustratie voor haken: materialen en handwerk voor haken of breien",
+  "caption": "",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}

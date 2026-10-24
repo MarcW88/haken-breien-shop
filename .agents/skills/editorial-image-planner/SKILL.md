@@ -1,9 +1,9 @@
 ---
 name: editorial-image-planner
-description: Décide si une page de bloc-notes-numeriques.fr a réellement besoin d'une image éditoriale générée, puis crée une requête compatible avec l'automatisation BFL. À utiliser après la rédaction et avant la publication.
+description: Décide si une page de haken-breien-shop.nl a réellement besoin d'une image éditoriale générée, puis crée une requête compatible avec l'automatisation BFL. À utiliser après la rédaction et avant la publication.
 license: MIT
 metadata:
-  adapted_for: bloc-notes-numeriques.fr
+  adapted_for: haken-breien-shop.nl
   generator: Black Forest Labs FLUX API
   default_model: FLUX.2 Pro Preview
 ---
@@ -54,10 +54,10 @@ Dans ces cas, conserver éventuellement la requête avec `status: BLOCKED` afin 
 
 Privilégier les scènes génériques, plausibles et éditoriales :
 
-- prise de notes pendant une réunion ;
-- étudiant utilisant un appareil E Ink générique dans un contexte de cours ;
-- lecture et annotation de documents sans interface ou marque identifiable ;
-- bureau, bibliothèque, déplacement, travail nomade ;
+- mains qui réalisent un point simple au crochet ;
+- mains qui tricotent avec des aiguilles génériques ;
+- textures de fils et échantillons de points ;
+- atelier créatif et table de travail ;
 - geste d'écriture ou contexte d'organisation documentaire.
 
 Le rendu doit être photoréaliste et sobre : lumière naturelle, matériaux plausibles, imperfections réalistes, photographie éditoriale. Éviter les compositions publicitaires, les appareils futuristes, les logos inventés et le texte généré dans l'image.

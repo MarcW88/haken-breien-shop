@@ -1,0 +1,20 @@
+{
+  "id": "koopadvies-hero",
+  "page": "koopadvies/index.html",
+  "slot": "hero",
+  "required": true,
+  "reason": "Photographie éditoriale illustrative pour la section koopadvies, à valider avant génération payante.",
+  "allow_ai_generation": false,
+  "truth_risk": "LOW",
+  "status": "BLOCKED",
+  "marker": "<!-- EDITORIAL_IMAGE:koopadvies-hero -->",
+  "output_path": "assets/generated/koopadvies-hero.webp",
+  "prompt": "Editorial photography of plain unbranded crochet hooks in different handles beside unbranded knitting needles and two yarn swatches on neat craft table, emphasize practical comparison rather than product ranking, no labels or logos, photorealistic editorial documentary craft photography, no fake testing claims, no watermark",
+  "alt": "Fotografische illustratie voor koopadvies: materialen en handwerk voor haken of breien",
+  "caption": "",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
