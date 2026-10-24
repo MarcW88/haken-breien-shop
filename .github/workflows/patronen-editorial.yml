@@ -1,0 +1,25 @@
+name: Patronen editorial technical validation
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'patronen/**'
+      - 'scripts/patronen/**'
+      - '.content/briefs/patronen--**'
+      - '.content/reviews/patronen--**'
+      - '.github/workflows/patronen-editorial.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate scoped Patronen HTML and links
+        env:
+          PATRONEN_PAGE: haakpatronen
+        run: python scripts/patronen/validate.py
