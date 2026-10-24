@@ -21,5 +21,5 @@ jobs:
           python-version: '3.12'
       - name: Validate scoped Materialen HTML and local links
         env:
-          MATERIALEN_PAGE: breinaalden
+          MATERIALEN_PAGE: materialen
         run: python scripts/materialen/validate.py

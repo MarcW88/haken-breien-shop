@@ -5,7 +5,7 @@ import os,re,sys,json
 ROOT=Path(__file__).resolve().parents[2]
 BASE=ROOT/"materialen"
 slug=os.getenv("MATERIALEN_PAGE","").strip("/")
-pages=[BASE/"index.html"]+sorted(BASE.glob("*/index.html")) if not slug else [BASE/("index.html" if slug=="breien" else slug+"/index.html")]
+pages=[BASE/"index.html"]+sorted(BASE.glob("*/index.html")) if not slug else [BASE/("index.html" if slug=="materialen" else slug+"/index.html")]
 class Links(HTMLParser):
  def __init__(self):super().__init__();self.links=[];self.h1=0
  def handle_starttag(self,tag,attrs):
