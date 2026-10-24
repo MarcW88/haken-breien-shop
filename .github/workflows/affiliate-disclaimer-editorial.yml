@@ -1,0 +1,23 @@
+name: Affiliate disclosure editorial technical validation
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'affiliate-disclaimer/**'
+      - 'scripts/affiliate-disclaimer/**'
+      - '.content/briefs/affiliate-disclaimer--**'
+      - '.content/reviews/affiliate-disclaimer--**'
+      - '.github/workflows/affiliate-disclaimer-editorial.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate affiliate disclaimer
+        run: python scripts/affiliate-disclaimer/validate.py
