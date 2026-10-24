@@ -1,0 +1,44 @@
+name: Prepare Haken and Breien editorial maintenance
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "One canonical path, such as /haken/steken/ (empty means next due)"
+        required: false
+        default: ""
+        type: string
+  push:
+    branches: [main]
+    paths:
+      - 'maintenance.config.json'
+      - 'scripts/maintenance_orchestrator.py'
+      - 'tests/test_maintenance.py'
+      - '.github/workflows/editorial-maintenance.yml'
+permissions:
+  contents: read
+concurrency:
+  group: editorial-maintenance-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test maintenance orchestration
+        run: python -m unittest discover -s tests -p 'test_maintenance*.py'
+      - name: Select one page and route agents
+        env:
+          REVIEW_URLS: ${{ inputs.urls }}
+        run: python scripts/maintenance_orchestrator.py prepare --max-pages 1 --urls "$REVIEW_URLS"
+      - name: Summarize pending editorial work
+        run: cat .artifacts/maintenance/handoff.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: editorial-maintenance-${{ github.run_id }}
+          path: .artifacts/maintenance/
+          if-no-files-found: error
+          retention-days: 90

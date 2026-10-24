@@ -1,46 +1,62 @@
 {
-  "max_pages": 10,
+  "max_pages": 1,
   "routes": {
-    "guides": {
+    "haken": {
       "workflow": "guide",
       "cadence_days": 90,
-      "validator": "validate_guide_quality.py"
+      "validator": "scripts/haken/validate.py"
     },
-    "comparatifs": {
+    "breien": {
+      "workflow": "guide",
+      "cadence_days": 90,
+      "validator": "scripts/haken/validate.py"
+    },
+    "patronen": {
+      "workflow": "guide",
+      "cadence_days": 90,
+      "validator": "scripts/haken/validate.py"
+    },
+    "garen": {
+      "workflow": "guide",
+      "cadence_days": 90,
+      "validator": "scripts/haken/validate.py"
+    },
+    "materialen": {
+      "workflow": "guide",
+      "cadence_days": 90,
+      "validator": "scripts/haken/validate.py"
+    },
+    "koopadvies": {
       "workflow": "comparison",
       "cadence_days": 30,
-      "validator": "validate_comparisons.py"
+      "validator": "scripts/haken/validate.py"
     },
-    "marques": {
-      "workflow": "brand",
-      "cadence_days": 45,
-      "validator": "validate_brands.py"
-    },
-    "usages": {
-      "workflow": "usage",
+    "inspiratie": {
+      "workflow": "guide",
       "cadence_days": 90,
-      "validator": "validate_usage_workflow.py"
-    },
-    "bons-plans": {
-      "workflow": "deal",
-      "cadence_days": 14,
-      "validator": "validate_deal_workflow.py"
+      "validator": "scripts/haken/validate.py"
     }
   },
   "overrides": {
-    "/guides/": {
+    "/haken/": {
       "enabled": false
     },
-    "/comparatifs/": {
+    "/breien/": {
       "enabled": false
     },
-    "/marques/": {
+    "/patronen/": {
       "enabled": false
     },
-    "/usages/": {
+    "/garen/": {
       "enabled": false
     },
-    "/bons-plans/": {
+    "/materialen/": {
+      "enabled": false
+    },
+    "/koopadvies/": {
+      "enabled": false
+    },
+    "/inspiratie/": {
       "enabled": false
     }
   }
