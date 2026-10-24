@@ -10,3 +10,7 @@ Status: QA_IN_PROGRESS; technical CI and owner approval pending.
 - internal-linking-audit: direct links to both material guides, pattern hub, yarn hub and crochet/knit tutorials.
 - seo-technical: one DOCTYPE, one H1, Dutch language, unique meta/title, self-canonical, removed invalid French hreflang; index,follow retained.
 - PUBLISH_REVIEW: machine and human gates outstanding; CI is technical validation only, not independent execution of editorial AI agents.
+
+## PUBLISH_REVIEW closure — 2026-10-24
+Status: PASS — HUMAN_APPROVED AND TECHNICALLY VALIDATED.
+Owner explicitly approved /materialen/. Machine CI Materialen 40096546283 SUCCESS, Haken quality 40096546074 SUCCESS, GitHub Pages deployment 40096546484 SUCCESS, all associated with commit a329e10a979d320b3de85f4617cdb1d9d57fa132. Original index,follow unchanged. Children remain noindex,follow. This update only records closure and does not attest independent agent execution.
