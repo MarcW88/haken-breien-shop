@@ -10,3 +10,6 @@ Status: QA_IN_PROGRESS, machine validation and owner decision pending.
 - internal-linking-audit: existing material and knitting guides linked, no cross-section edits.
 - seo-technical: unique Dutch title/description, single doctype/H1 and correct canonical; noindex,follow preserved.
 - PUBLISH_REVIEW: pending technical CI and human approval. CI does not prove independent LLM agent execution.
+
+## Owner approval and technical closure — 2026-10-24
+User explicitly approved Breinaalden. Materialen editorial technical run 40096180742 SUCCESS and Haken regression run 40096180660 SUCCESS. Verdict: PASS — HUMAN_APPROVED FOR CONTENT. Existing noindex,follow preserved. Production deployment for this individual commit not asserted.
