@@ -6,7 +6,7 @@
   "reason": "Génération BFL et intégration automatique de l’image illustrative de l’accueil autorisées explicitement par Marc le 24 octobre 2026 ; relance du workflow à sa demande.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:homepage-hero -->",
   "output_path": "assets/generated/homepage-hero.webp",
   "prompt": "Natural window-light editorial photograph of crochet yarn balls and knitting needles beside a partially knitted moss-green scarf on a pale wooden craft table, close tactile detail, tasteful warm cream sage and terracotta color story, photorealistic, realistic needle and stitch geometry, no logos no text, photorealistic editorial documentary craft photography, no fake testing claims, no watermark",
@@ -16,5 +16,8 @@
   "height": 672,
   "prompt_upsampling": true,
   "seed": null,
-  "generated_at": null
+  "generated_at": "2026-10-24T22:32:52.574568+00:00",
+  "bfl_request_id": "5e628f52-1779-4576-8a50-b6953214b3ab",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }
