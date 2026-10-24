@@ -13,3 +13,6 @@ Status: QA_IN_PROGRESS pending CI and owner approval.
 
 ## PUBLISH_REVIEW — technical closure
 GitHub Actions run 40092419710: SUCCESS on commit `12a1b34ddba28eb1b07d6440840f545bdfbc6694`. Technical local-links and HTML gate passed. Verdict: **PASS — READY_FOR_HUMAN_VALIDATION** for the documented scope; final editorial acceptance belongs to the site owner. Do not remove `noindex,follow` on this basis. GitHub Actions does not independently execute language-model editing skills.
+
+## Clôture — approbation manuelle 2026-10-24
+L'utilisateur a validé Breisteken. Contrôle GitHub Actions 40092419710 : SUCCESS. Décision **PASS — HUMAN_APPROVED FOR CONTENT**, sans changement de `noindex,follow` ni permission d'indexation.
