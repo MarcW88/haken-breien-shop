@@ -1,0 +1,12 @@
+# PUBLISH_REVIEW — /breien/voor-beginners/ — 2026-10-24
+- guide-analysis-workflow: DEEP_REWRITE. Existing page had no editorial guide, doubled document wrapper and invalid fr-FR hreflang.
+- fact-check: Craft Yarn Council "Learn Knit Stitch" and "How to Read a Knitting Pattern" corroborate that slip knot is stitch 1 in the knitted cast-on, working all rows knit yields garter stitch, alternating knit/purl flat yields stockinette, and bind-off involves lifting previous stitch over next. Precise source URLs in article.
+- content-and-copy: created stepwise Dutch 18-stitch example with error recovery, exercises, knit/purl distinctions, bind-off, materials and next steps.
+- humanizer: replaced generic encouragement and promotional promises with novice-specific observable checkpoints (18 stitches at row boundaries; yarn pulled over needle).
+- general-writing: separated the cast-on and knit instructions, clarified how needle roles change after turning, simplified reader-facing troubleshooting.
+- anti-ai-slop: avoided generic shopping recommendations, fabricated speed estimates, and repetitive "perfect for everyone" language. Every box addresses an actual beginner decision/error.
+- internal-linking-audit: breadcrumbs and related article links all existing site paths; section neighbors not modified.
+- seo-onpage: focused title/meta/H1, navigation anchors, specific answer in opening, semantic hierarchy; no fake FAQ schema.
+- seo-technical: single document wrapper, Dutch language, canonical, no fr-FR hreflang; noindex preserved.
+- editorial-qa: 18 stitches counts include initial slip knot, step sequence consistent, no first-hand product claim.
+- PUBLISH_REVIEW: editorial draft ready for machine QA, then manual approval. Technical checks cannot prove LLM skill execution; no indexation approval.

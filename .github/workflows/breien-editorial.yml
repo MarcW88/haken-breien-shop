@@ -1,0 +1,23 @@
+name: Breien editorial technical validation
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'breien/**'
+      - 'scripts/breien/**'
+      - '.content/briefs/breien--**'
+      - '.content/reviews/breien--**'
+      - '.github/workflows/breien-editorial.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate Breien HTML and local links
+        run: python scripts/breien/validate.py
