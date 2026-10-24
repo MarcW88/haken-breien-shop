@@ -10,3 +10,6 @@ Status: QA_IN_PROGRESS pending CI and owner approval.
 - seo-onpage/technical: Dutch title/meta, canonical, one H1/doctype, no invalid hreflang and preserved noindex.
 - editorial-qa: explicit even-stitch count example, warning that flat-knit instructions are not round-knit recipes, no invented first-hand experience.
 - PUBLISH_REVIEW: pending machine verification and user decision; no autonomous AI model invocation by GitHub Actions.
+
+## PUBLISH_REVIEW — technical closure
+GitHub Actions run 40092419710: SUCCESS on commit `12a1b34ddba28eb1b07d6440840f545bdfbc6694`. Technical local-links and HTML gate passed. Verdict: **PASS — READY_FOR_HUMAN_VALIDATION** for the documented scope; final editorial acceptance belongs to the site owner. Do not remove `noindex,follow` on this basis. GitHub Actions does not independently execute language-model editing skills.
