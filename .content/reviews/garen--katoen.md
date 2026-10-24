@@ -11,3 +11,6 @@ Status: pending CI and owner decision.
 - seo-technical: single doctype, self-canonical, nl, noindex,follow preserved, false fr-FR removed.
 - editorial-qa: maintenance conditional on label, no blanket 60C assumption, measured swatch described accurately.
 - PUBLISH_REVIEW: pending technical gate and human acceptance; CI is not independent AI skills verification.
+
+## Owner approval and CI closure — 2026-10-24
+The user explicitly approved Katoen; Garen editorial run 40094948747 SUCCESS, Haken nonregression 40094948720 SUCCESS. **PASS — HUMAN_APPROVED FOR CONTENT**. Deployment 40094948641 was cancelled, so production deployment for that commit is not attested. Preserve noindex,follow.
