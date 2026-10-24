@@ -1,0 +1,25 @@
+name: Vergelijkingen editorial technical validation
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'vergelijkingen/**'
+      - 'scripts/vergelijkingen/**'
+      - '.content/briefs/vergelijkingen--**'
+      - '.content/reviews/vergelijkingen--**'
+      - '.github/workflows/vergelijkingen-editorial.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate comparison page HTML
+        env:
+          VERGELIJKINGEN_PAGE: vergelijkingen
+        run: python scripts/vergelijkingen/validate.py
