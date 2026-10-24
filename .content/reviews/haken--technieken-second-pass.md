@@ -14,3 +14,10 @@ Decision: QA_IN_PROGRESS until GitHub checks; human confirmation required.
 10. PUBLISH_REVIEW final outcome to be recorded after new CI result.
 
 Evidence: https://eenmooigebaar.nl/haaksteek/onzichtbaar-minderen/ ; https://www.craftyarncouncil.com/standards/how-to-read-crochet-pattern ; Craft Yarn Council certified crochet instructors program (working in the round).
+
+## Final PUBLISH_REVIEW closure — 2026-10-24
+
+- Run 40091501565 completed SUCCESS on commit `2b9b24c3ebd0c608fedae71f7a5ccb1a5be6dcd0`.
+- User explicitly approved Haaktechnieken in chat.
+- Decision: **PASS — HUMAN_APPROVED FOR CONTENT**, with the existing `noindex,follow` unchanged because no explicit indexation instruction was given.
+- The CI is a technical validator; it is not proof of separately hosted LLM invocations.
