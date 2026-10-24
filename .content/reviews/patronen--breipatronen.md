@@ -10,3 +10,6 @@ Status: machine validation pending; owner approval pending.
 - seo-onpage and technical: unique Dutch title/description/H1, single DOCTYPE, self canonical; no invalid French hreflang; noindex unchanged.
 - editorial-qa: compared 2x2 rib and six-repeat net-zero yarn-over example, gauge computation and flat/round caveats. No copying existing creative patterns.
 - PUBLISH_REVIEW: awaits technical CI and human validation. CI does not independently run humanizer/general-writing/anti-ai-slop.
+
+## Final owner approval — 2026-10-24
+Breipatronen explicitly approved in chat. Patronen CI run 40093917913 and pages deployment 40093917641 both completed SUCCESS. PUBLISH_REVIEW: PASS — HUMAN_APPROVED FOR CONTENT. Original noindex,follow unchanged.
