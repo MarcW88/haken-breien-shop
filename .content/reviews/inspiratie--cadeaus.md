@@ -10,3 +10,6 @@ Status: PENDING CI and owner manual approval.
 - internal-linking-audit: internal links to existing garen, haak/brei tutorials, pattern guides and related project pages.
 - seo-technical: one DOCTYPE/H1, canonical, nl, no false hreflang and noindex,follow preserved.
 - PUBLISH_REVIEW: pending GitHub technical CI and owner acceptance; documentary workflow passes do not prove autonomous agents executed.
+
+## Owner approval and technical closure — 2026-10-24
+The owner explicitly approved Cadeaus. Inspiratie technical run 40111714759 SUCCESS, Haken nonregression run 40111714752 SUCCESS, Pages deployment 40111714701 SUCCESS, all on commit 5995966be610b5ad0b96a682dff69d24378bfa0f. PASS — HUMAN_APPROVED, noindex,follow preserved.
