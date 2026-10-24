@@ -10,3 +10,6 @@ Status: QA_IN_PROGRESS, waiting technical CI and manual owner approval.
 - internal-linking-audit: three complete buying guides, plus materials, yarn and patterns.
 - seo-technical: single DOCTYPE/H1, self canonical, lang nl, invalid hreflang removed; original index,follow kept.
 - PUBLISH_REVIEW: pending successful CI and owner approval; machine CI does not attest independent skill-agent executions.
+
+## Final PUBLISH_REVIEW closure — 2026-10-24
+PASS — HUMAN_APPROVED AND TECHNICAL CHECKS SUCCESSFUL. Owner explicitly approved /koopadvies/. On head 5bd062a13bdb78ad86870aaf34de17104b05c815, Koopadvies run 40110437317 SUCCESS, Haken checks 40110437247 SUCCESS, GitHub Pages 40110436825 SUCCESS. Hub remains index,follow and three child guides noindex,follow. The only modification in this commit is this review record; content and indexation unchanged. Machine validation does not attest separate autonomous editorial agents.
