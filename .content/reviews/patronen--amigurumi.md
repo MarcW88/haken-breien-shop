@@ -10,3 +10,6 @@ Status: pending machine QA and owner approval.
 - seo-onpage/technical: unique title/meta, self canonical, one doctype/h1, nl, no false hreflang and original noindex.
 - internal-linking-audit: paths to haken techniques/projects, patronen haakpatronen and materials exist.
 - PUBLISH_REVIEW: pending GitHub Actions and owner manual approval. CI only attests machine gates, not separate hosted LLM skill calls.
+
+## Owner-approved close — 2026-10-24
+Owner approved Amigurumi explicitly in chat. Patronen run 40094124740 SUCCESS and Haken non-regression run 40094124690 SUCCESS. Content PUBLISH_REVIEW PASS — HUMAN_APPROVED, while Pages deployment 40094125074 was queued at last verification (not claimed as succeeded). Keep noindex,follow.
