@@ -11,3 +11,6 @@ Status: pending machine CI and owner acceptance.
 - internal-linking-audit: links to Garen hub and children, patroon hub and koopadvies parent.
 - seo-technical: unique meta/title, one doctype/H1, self-canonical, nl, false hreflang removed; noindex,follow unchanged.
 - PUBLISH_REVIEW: machine and user approval pending. Technical CI cannot prove execution of separate LLM editorial agents.
+
+## PUBLISH_REVIEW closure — 2026-10-24
+User explicitly approved Beste garen. Koopadvies technical run 40110117799 SUCCESS, Haken validation 40110117723 SUCCESS, and GitHub Pages 40110117404 SUCCESS on commit ea3ca6ccc94bc2db48f84f480a5277ed37a6a2ba. Status PASS — HUMAN_APPROVED. noindex,follow preserved.

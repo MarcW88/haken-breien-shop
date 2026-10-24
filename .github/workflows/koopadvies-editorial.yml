@@ -21,5 +21,5 @@ jobs:
           python-version: '3.12'
       - name: Validate scoped Koopadvies HTML
         env:
-          KOOPADVIES_PAGE: beste-garen
+          KOOPADVIES_PAGE: koopadvies
         run: python scripts/koopadvies/validate.py
