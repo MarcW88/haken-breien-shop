@@ -1,0 +1,2 @@
+# SEO/GEO /contact/ — 2026-10-24
+DEEP_REWRITE original placeholder with duplicate HTML root, false fr-FR and minimal metadata. Trust/contact intent; no validated contact address or receiving backend established, therefore no fabricated contact route and no inert submission form. Describe limitation transparently; provide troubleshooting content and relevant links. Keep noindex,follow, canonical. This page alone, supporting audit and scoped CI only.
