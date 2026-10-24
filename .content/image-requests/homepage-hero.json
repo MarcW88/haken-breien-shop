@@ -3,7 +3,7 @@
   "page": "index.html",
   "slot": "hero",
   "required": true,
-  "reason": "Photographie éditoriale illustrative pour la section homepage, à valider avant génération payante.",
+  "reason": "Génération BFL et intégration automatique de l’image illustrative de l’accueil autorisées explicitement par Marc le 24 octobre 2026 ; relance du workflow à sa demande.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
   "status": "PENDING",
