@@ -1,0 +1,25 @@
+name: Koopadvies editorial technical validation
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'koopadvies/**'
+      - 'scripts/koopadvies/**'
+      - '.content/briefs/koopadvies--**'
+      - '.content/reviews/koopadvies--**'
+      - '.github/workflows/koopadvies-editorial.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate scoped Koopadvies HTML
+        env:
+          KOOPADVIES_PAGE: beste-haaknaalden
+        run: python scripts/koopadvies/validate.py
