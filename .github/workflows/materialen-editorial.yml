@@ -1,0 +1,25 @@
+name: Materialen editorial technical validation
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'materialen/**'
+      - 'scripts/materialen/**'
+      - '.content/briefs/materialen--**'
+      - '.content/reviews/materialen--**'
+      - '.github/workflows/materialen-editorial.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate scoped Materialen HTML and local links
+        env:
+          MATERIALEN_PAGE: haaknaalden
+        run: python scripts/materialen/validate.py
