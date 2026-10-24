@@ -1,0 +1,4 @@
+# AUDIT SEO/GEO — /breien/projecten/ — 2026-10-24
+Decision: DEEP_REWRITE of duplicate-markup placeholder and invalid fr-FR hreflang. Intent: Dutch project selection by knitting skills rather than generic project inspiration. Cluster boundary: /breien/voor-beginners/ teaches first swatch; /breien/steken/ fabrics; /breien/technieken/ shaping; /breien/projecten/ chooses project and prepares material.
+Fact-check grounded in Craft Yarn Council gauge, label, needle standards. Includes computed illustration 20 stitches/10cm → 50 stitches for 25cm, explicitly provisional and subject to repeat constraints. No invented duration/ball consumption or product tests.
+Content design: project-by-skill matrix; progressively harder project ideas; material/gauge checkpoint; troubleshooting; pre-project plan. Preserve noindex.
