@@ -22,3 +22,7 @@ Do not advance to /haken/technieken/ until user approves this page.
 - seo-technical: Noindex,follow deliberately retained; GitHub Actions validation pending.
 - editorial-qa: 16-chain to 15 single-crochet swatch remains consistent; the taller stitch swatch notes pattern-dependent turning chains; no first-hand product testing claimed.
 - PUBLISH_REVIEW: pending latest CI and owner approval. No indexation authorized.
+
+## PUBLISH_REVIEW decision — 2026-10-24
+
+Technical GitHub Actions run 40091312476: SUCCESS. All automated editorial HTML and local-link checks passed. Individual humanizer, general-writing and anti-ai-slop edits are described above; automated CI is not proof of their substantive quality. Editorial outcome: PASS — READY_FOR_HUMAN_VALIDATION for this scoped update. Owner has not yet approved this page in this review cycle; keep noindex,follow. Do not start the next page before approval.
