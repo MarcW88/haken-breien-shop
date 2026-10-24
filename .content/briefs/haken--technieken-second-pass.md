@@ -1,0 +1,6 @@
+# Second-pass audit — /haken/technieken/ — 2026-10-24
+Decision: LIGHT_UPDATE, not DEEP_REWRITE. Existing article has a clear place in the cluster: crochet construction, rounds, increases/decreases, color transitions and finishing. /haken/steken/ owns stitch definitions and /haken/projecten/ owns selection of projects.
+Observed problems: a compressed invisible-decrease instruction could mislead a beginner into drawing up yarn between the two front loops; misleading assumption that a magic ring determines the resulting shape; generic source introduction; circle counts needed an explicit explanation.
+Research: Craft Yarn Council certified crochet instructor curriculum on rounds and increases; Een Mooi Gebaar detailed invisible decreases; Craft Yarn Council pattern reading glossary. No fabricated search volume, expert testing or personal experience.
+Scope: correct procedural facts; retain useful table and structure; improve intro, transitions and evidence without creating competing tutorials.
+Noindex unchanged.
