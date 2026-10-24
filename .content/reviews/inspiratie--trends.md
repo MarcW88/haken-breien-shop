@@ -10,3 +10,6 @@ Status: awaiting technical CI and owner manual approval.
 - internal-linking-audit: existing crochet/knit project and stitch guides, yarn hub, patterns and inspiration pages.
 - seo-technical: one HTML root/DOCTYPE/H1, Dutch lang, canonical, invalid fr-FR removed, robots noindex,follow unchanged.
 - PUBLISH_REVIEW: pending successful CI and explicit approval; workflow log documents editorial activity but CI is only technical validation.
+
+## Owner-approved CI closure — 2026-10-24
+Owner approved Trends. Inspiratie run 40112252830 SUCCESS, Haken quality 40112252798 SUCCESS and Pages 40112252613 SUCCESS, all at e8b9f1ea08685af38d86c639c3b84b392d96721c. Verdict PASS — HUMAN_APPROVED. Retain original noindex,follow.
