@@ -10,3 +10,6 @@
 - seo-technical: single document wrapper, Dutch language, canonical, no fr-FR hreflang; noindex preserved.
 - editorial-qa: 18 stitches counts include initial slip knot, step sequence consistent, no first-hand product claim.
 - PUBLISH_REVIEW: editorial draft ready for machine QA, then manual approval. Technical checks cannot prove LLM skill execution; no indexation approval.
+
+## Clôture du PUBLISH_REVIEW — 2026-10-24
+Contrôle GitHub Actions 40092170421 SUCCESS et déploiement 40092170181 SUCCESS. La validation manuelle explicite a été reçue dans le chat. Verdict: **PASS — HUMAN_APPROVED FOR CONTENT** ; `noindex,follow` préservé. Aucune autorisation d'indexation donnée.

@@ -21,5 +21,5 @@ jobs:
           python-version: '3.12'
       - name: Validate Breien HTML and local links
         env:
-          BREIEN_PAGE: voor-beginners
+          BREIEN_PAGE: steken
         run: python scripts/breien/validate.py
