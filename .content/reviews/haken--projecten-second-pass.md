@@ -14,3 +14,9 @@ Decision: LIGHT_UPDATE, QA_IN_PROGRESS pending GitHub Actions.
 10. PUBLISH_REVIEW: to be completed after latest CI. No automatic indexation.
 
 Sources: https://www.craftyarncouncil.com/node/461 ; https://www.craftyarncouncil.com/standards/how-to-read-crochet-pattern ; https://media.craftyarncouncil.com/files/CIP/CYC_CIP_Crochet_Program_2017.pdf .
+
+## Final machine check and publication decision
+
+- GitHub Actions run 40091640731: SUCCESS for commit `0f0b6e5b2aecdb9842c090d8a721380d3081d595`.
+- PUBLISH_REVIEW: **PASS — READY_FOR_HUMAN_VALIDATION** for the scoped editorial update. This status does not mean an autonomous AI pipeline ran in GitHub Actions; the discrete review observations are recorded above.
+- User confirmation still required. `noindex,follow` remains unchanged. No other Haken article modified in this cycle.
