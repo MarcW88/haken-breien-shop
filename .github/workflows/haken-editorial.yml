@@ -7,12 +7,14 @@ on:
       - 'assets/style.css'
       - 'index.html'
       - 'scripts/haken/**'
+      - '.content/reviews/**'
       - '.github/workflows/haken-editorial.yml'
   pull_request:
     paths:
       - 'haken/**'
       - 'assets/style.css'
       - 'scripts/haken/**'
+      - '.content/reviews/**'
   workflow_dispatch:
     inputs:
       page:
@@ -33,6 +35,8 @@ jobs:
         env:
           HAKEN_PAGE: ${{ inputs.page }}
         run: python scripts/haken/validate.py
+      - name: Validate individual editorial pass attestations
+        run: python scripts/haken/editorial_gate.py
       - name: Upload machine report
         if: always()
         uses: actions/upload-artifact@v4
