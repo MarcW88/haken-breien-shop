@@ -10,3 +10,6 @@ Status: QA_IN_PROGRESS pending machine QA and owner validation.
 - seo-onpage/technical: unique title/meta/canonical, one DOCTYPE/H1, no invalid hreflang; noindex retained.
 - editorial-qa: project-skill distinctions checked, stockinette curling and gauge caveats; no physical tests claimed.
 - PUBLISH_REVIEW: machine + owner gates pending; CI does not run LLM agents autonomously.
+
+## Clôture — 2026-10-24
+Contrôles de Breiprojecten : Breien run 40092919350 et déploiement run 40092919334 — SUCCESS. Le propriétaire a explicitement validé le contenu dans le chat. Décision : PASS — HUMAN_APPROVED FOR CONTENT. `noindex,follow` conservé et aucune indexation autorisée.
