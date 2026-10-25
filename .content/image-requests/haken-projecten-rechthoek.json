@@ -1,0 +1,20 @@
+{
+  "id": "haken-projecten-rechthoek",
+  "page": "haken/projecten/index.html",
+  "slot": "beginnersprojecten",
+  "required": true,
+  "reason": "Visualiser le format accessible d’un petit projet rectangulaire après les trois propositions pour débutants, avant les projets avancés. Illustration générique sans prétendre représenter les 20 mailles de l’exercice ou un résultat testé. Cycle explicitement autorisé par Marc après validation de Haken voor beginners le 25 octobre 2026.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:haken-projecten-rechthoek -->",
+  "output_path": "assets/generated/haken-projecten-rechthoek.webp",
+  "prompt": "Natural-light editorial photograph of a small simple rectangular handmade crochet cloth in muted sage green lying flat on a pale wooden table, shown in full with clear edges and generous empty space around it, beside a plain matching yarn ball and one generic crochet hook resting separately. The modest size and uncomplicated rectangular silhouette should be the main subject. No elaborate lace or decorative motifs. Soft side window light, realistic everyday scale and materials, warm neutral surroundings, gently oblique overhead documentary craft photography. Generic illustrative project, not a visual instruction or exact reproduction of a written pattern. No active stitch, no hands, no stitch-count markings, no chart, no text, no label, no logo, no watermark, no claim of testing or heat resistance.",
+  "alt": "Een klein groen rechthoekig haakwerkje naast een bol garen en een haaknaald",
+  "caption": "Met AI gemaakte projectillustratie; geen exacte weergave van het oefenpatroon met 20 vasten.",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
