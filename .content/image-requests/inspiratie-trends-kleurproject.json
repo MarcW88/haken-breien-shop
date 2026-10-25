@@ -6,7 +6,7 @@
   "reason": "Montrer un petit accessoire générique à couleurs franches pour contextualiser la carte Een trend hoeft geen groot project te zijn. Placement après la grille, hors cartes. Illustration créative sans preuve de popularité en 2026 ni reproduction d’un modèle précis. Cycle explicitement autorisé par Marc après validation d’Inspiratie seizoenen le 25 octobre 2026.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:inspiratie-trends-kleurproject -->",
   "output_path": "assets/generated/inspiratie-trends-kleurproject.webp",
   "prompt": "Natural-light editorial photograph of one small original handmade rectangular yarn pouch lying flat on a pale wooden table, with broad simple color blocks in muted cobalt blue, terracotta and warm cream. Two small plain unlabelled yarn balls in matching colors nearby. A modest creative color experiment rather than a complex garment, understated realistic craft workspace, gentle oblique overhead framing, soft side window light, realistic everyday proportions and tactile textile, candid documentary photography. Creative project illustration only, not a specific designer pattern, not evidence of a measured fashion trend or popularity in any year, not a technical stitch diagram. No hands, no active stitching, no garment labels, no charts, no text, no branding, no logo, no watermark.",
@@ -16,5 +16,8 @@
   "height": 672,
   "prompt_upsampling": true,
   "seed": null,
-  "generated_at": null
+  "generated_at": "2026-10-25T17:39:12.175482+00:00",
+  "bfl_request_id": "6877ce3b-8d01-4448-bfae-025834f038b8",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }
