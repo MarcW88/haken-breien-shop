@@ -1,0 +1,87 @@
+/* Atelier textile — pilot pages, shared visual vocabulary. */
+body.atelier{--ink:#253f35;--cream:#faf8f3;--soft:#f0eee6;--color-text-muted:#65675e;--accent:#ad7658;background:var(--cream);color:var(--ink)}
+.atelier .wrap{max-width:1184px}
+.atelier .topbar{background:#eeeae0;color:#45554b;font-size:11px;letter-spacing:.04em;padding:9px 20px}
+.atelier header{background:var(--cream);border-bottom:1px solid #d9ded3}
+.atelier .header{min-height:96px;gap:26px}
+.atelier .logo{font-size:25px;color:var(--ink)}
+.atelier .logo span,.atelier footer strong span{color:#997258}
+.atelier .header-cta{background:transparent;border:1px solid #a9b4a6;border-radius:3px;padding:12px 16px}
+.atelier nav a{font-weight:500}
+.atelier .kicker{color:#73644d;font-size:10px;letter-spacing:.15em}
+.atelier p{color:#535e54}
+.atelier h1,.atelier h2,.atelier h3{color:var(--ink)}
+.atelier h1 em,.atelier h2 em{color:inherit}
+.atelier .btn{border-radius:3px;padding:15px 20px;line-height:1.5}
+.atelier .dark{background:var(--ink)}
+.atelier .outline{border-color:#a3afa1}
+.atelier .hero{background:var(--cream);border-bottom:1px solid #d9ded3}
+.atelier .hero-grid{grid-template-columns:1fr 1fr;gap:64px;min-height:560px;padding-top:56px;padding-bottom:56px}
+.atelier .hero h1{font-size:clamp(40px,4.2vw,59px);line-height:1.08;letter-spacing:-.035em;max-width:15ch;margin:20px 0 24px}
+.atelier .hero p{font-size:16px;line-height:1.75}
+.atelier .hero .art{border-radius:3px;height:440px;background:#e8e5d9}
+.atelier .hero .art>figure.editorial-media img{object-position:50% 50%}
+.atelier .hero .art>div{display:none}
+.atelier .actions{margin:26px 0 22px;gap:10px}
+.atelier .checks{font-size:10px;gap:12px;color:#5c6b5b}
+.atelier .values{background:#f0eee6;color:#465a49;border-bottom:1px solid #d9ded3}
+.atelier .value-grid{padding-top:18px;padding-bottom:18px;font-size:12px;font-weight:400}
+.atelier .section{padding-top:64px;padding-bottom:64px}
+.atelier .section-head{margin-bottom:28px;align-items:start}
+.atelier main h2:not([data-keep-scale]){font-size:clamp(28px,3vw,40px);line-height:1.17;letter-spacing:-.025em;margin:12px 0 20px}
+.atelier .section-head>p{max-width:300px;font-size:14px;margin-top:22px}
+.atelier .categories{grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid #cbd3c5;border-left:1px solid #cbd3c5}
+.atelier .category,.atelier .category:nth-child(n){grid-column:auto;min-height:225px;background:transparent;border-radius:0;border-right:1px solid #cbd3c5;border-bottom:1px solid #cbd3c5;padding:24px;transform:none;transition:background .15s}
+.atelier .category:hover{background:#eeeede}
+.atelier .category:first-child{grid-column:span 2;background:#e7ecdf}
+.atelier .category .symbol{display:none}
+.atelier .category .num{font-size:9px;color:#687361;margin-bottom:30px}
+.atelier .category h3{font-family:'DM Serif Display',Georgia,serif;font-size:29px;margin-bottom:10px}
+.atelier .category p{font-size:13px;line-height:1.65;max-width:30ch}
+.atelier .category b{font-size:11px;margin-top:auto}
+.atelier .feature{background:#e8ecdf;padding:56px 0;border-top:1px solid #d3dac9;border-bottom:1px solid #d3dac9}
+.atelier .feature-grid{grid-template-columns:1fr;gap:0;max-width:900px}
+.atelier .feature-art{display:none}
+.atelier .feature p{margin:18px 0;max-width:70ch}
+.atelier .feature ul{margin-bottom:26px}
+.atelier .advice{gap:24px}
+.atelier .advice>a{background:transparent;border:0;border-top:1px solid #aab7a1;border-radius:0;padding:24px 0;box-shadow:none}
+.atelier .advice>a>div{background:transparent!important;border-radius:0!important;font-family:'DM Serif Display',Georgia,serif;font-size:26px;height:auto;min-height:0;color:#8b735a;margin-bottom:18px}
+.atelier .advice h3{font-family:'DM Serif Display',Georgia,serif;font-size:25px;font-weight:400}
+.atelier .advice p{font-size:14px}
+.atelier .advice b{font-size:12px}
+.atelier .bottom-band{background:var(--ink);padding:44px 0}
+.atelier .bottom-band h2,.atelier .bottom-band p{color:#faf8f3}
+.atelier footer{background:#eeede5;border-top:1px solid #d4dbce}
+.atelier .copyright{border-top:1px solid #d4dbce;color:#5d695b}
+.atelier .topic-hero{background:#eeefe5;border-bottom:1px solid #d3dac9;padding:38px 0 44px}
+.atelier .crumbs{font-size:11px;margin-bottom:28px;color:#68715e}
+.atelier .topic-hero h1{font-size:clamp(36px,4vw,56px);max-width:22ch;line-height:1.1;margin:16px 0 22px}
+.atelier .topic-hero p{max-width:72ch;font-size:17px;line-height:1.75}
+.atelier .guide-tags{gap:18px;margin-top:24px}
+.atelier .guide-tags span{background:transparent;border-radius:0;border-top:1px solid #a9b6a1;padding:10px 0 0;color:#56634e;font-size:11px}
+.atelier main>.guide-layout{grid-template-columns:minmax(0,740px) minmax(0,260px);gap:64px;padding-top:48px}
+.atelier .guide-body{font-size:16px;line-height:1.8}
+.atelier .guide-lead{background:transparent;border:0;border-top:2px solid #75876a;border-bottom:1px solid #cbd3c5;border-radius:0;padding:22px 0;font-size:17px}
+.atelier .guide-toc{background:#f0f1e8;border:0;border-radius:3px;padding:24px;gap:9px;margin:28px 0 40px}
+.atelier .guide-toc a{font-size:13px}
+.atelier .guide-body h2:not([data-keep-scale]){margin-top:48px;font-size:34px;max-width:32ch}
+.atelier .guide-body h3{font-size:25px}
+.atelier .guide-table{background:transparent;font-size:14px}
+.atelier .guide-table th{background:#e8ecdf;color:#30472f;font-weight:600}
+.atelier .guide-table td,.atelier .guide-table th{border-bottom:1px solid #cbd3c5;padding:16px}
+.atelier .guide-callout{background:#eeefe5;border-radius:3px;border-left:3px solid #84916f;padding:24px;margin:28px 0}
+.atelier .troubles{gap:0;border-top:1px solid #cbd3c5}
+.atelier .troubles>div{background:transparent;border:0;border-bottom:1px solid #cbd3c5;border-radius:0;padding:24px 20px 24px 0}
+.atelier .guide-faq details{background:transparent;border-bottom:1px solid #cbd3c5;padding:22px 0}
+.atelier .aside-box{background:#eeefe5;border:1px solid #cbd3c5;border-radius:3px;padding:24px}
+.atelier .aside-box strong{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:28px}
+.atelier main figure.editorial-media img{border-radius:3px!important}
+.atelier .guide-steps li:before{background:#536b48;border-radius:3px}
+@media(max-width:1000px){.atelier .header{gap:18px;flex-wrap:wrap;padding-top:20px;padding-bottom:18px}.atelier .header nav{order:3;flex-basis:100%;justify-content:flex-start;gap:22px;overflow:auto;padding:10px 0 0}.atelier .header-cta{margin-left:auto}.atelier .hero-grid{gap:32px}.atelier main>.guide-layout{grid-template-columns:minmax(0,1fr);gap:32px}.atelier .guide-aside{position:static}.atelier .categories{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.atelier .header{min-height:0}.atelier .logo{font-size:22px}.atelier .logo small{display:none}.atelier .header-cta{padding:10px;font-size:11px}.atelier .header nav{gap:20px}.atelier .header nav a{font-size:12px;white-space:nowrap}.atelier .hero-grid{grid-template-columns:1fr;padding-top:34px;padding-bottom:32px;gap:28px}.atelier .hero h1{font-size:41px;max-width:17ch}.atelier .hero .art{height:285px}.atelier .actions{display:grid;grid-template-columns:1fr}.atelier .btn{text-align:center}.atelier .checks{gap:9px;font-size:9px}.atelier .value-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:10px}.atelier .section{padding-top:40px;padding-bottom:40px}.atelier .section-head{display:block}.atelier .section-head>p{margin-top:12px;max-width:none}.atelier .category,.atelier .category:nth-child(n){min-height:220px;padding:19px;grid-column:auto}.atelier .category:first-child{grid-column:span 2;min-height:200px}.atelier .category h3{font-size:26px}.atelier .category p{font-size:12px}.atelier .category .num{margin-bottom:22px;font-size:8px}.atelier .feature{padding:38px 0}.atelier .advice{grid-template-columns:1fr;gap:8px}.atelier .bottom-band{padding:36px 0}.atelier .topic-hero{padding:25px 0 30px}.atelier .topic-hero h1{font-size:36px}.atelier .topic-hero p{font-size:16px}.atelier .guide-tags{gap:12px}.atelier .guide-tags span{font-size:10px}.atelier main>.guide-layout{padding-top:30px}.atelier .guide-body h2:not([data-keep-scale]){font-size:29px;margin-top:38px}.atelier .guide-toc{padding:20px}.atelier .guide-table td,.atelier .guide-table th{padding:12px}.atelier .troubles{grid-template-columns:1fr}.atelier .band-flex{align-items:stretch}}
+.atelier .guide-toc{justify-content:stretch}
+.atelier .guide-toc a,.atelier .guide-toc b{text-align:left}
+@media(max-width:600px){.atelier .header nav{row-gap:16px;padding-bottom:4px}.atelier .guide-toc{justify-content:stretch}}
+.atelier footer,.atelier footer a,.atelier footer strong{color:var(--ink)}
+.atelier .guide-table th:first-child,.atelier .guide-table td:first-child{width:28%;min-width:94px;overflow-wrap:normal;hyphens:auto}
