@@ -1,0 +1,20 @@
+{
+  "id": "breien-projecten-sjaal",
+  "page": "breien/projecten/index.html",
+  "slot": "eerste-sjaal",
+  "required": true,
+  "reason": "Illustrer le format d’une première écharpe rectangulaire après les paragraphes consacrés à ce projet. Scène générique, sans prétendre représenter le résultat exact du tutoriel, une jauge ou une technique vérifiée. Cycle autorisé par Marc après validation de Breien voor beginners le 25 octobre 2026.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:breien-projecten-sjaal -->",
+  "output_path": "assets/generated/breien-projecten-sjaal.webp",
+  "prompt": "Natural-light editorial photograph of a modest simple hand-knitted rectangular scarf in warm muted oatmeal, loosely folded lengthwise on a pale wooden table so its straight uncomplicated silhouette and soft drape are visible, beside a matching plain yarn ball and two generic straight wooden knitting needles resting separately. A calm everyday craft project, no elaborate pattern or decorative accessories. Gently oblique overhead framing, soft side window light, realistic materials and everyday proportions, subtle sage background, documentary craft photography. Illustrate a possible first scarf project, not an exact written pattern, stitch demonstration, fiber identification or material test. No hands, no active knitting, no mounted stitches, no ruler, no chart, no labels, no text, no logo or watermark.",
+  "alt": "Een eenvoudige lichtbeige gebreide sjaal naast een bol garen en twee breinaalden",
+  "caption": "Met AI gemaakte projectillustratie; geen exacte weergave van een patroon of stekenverhouding.",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
