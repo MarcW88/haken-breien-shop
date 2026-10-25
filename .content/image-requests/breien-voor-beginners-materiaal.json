@@ -1,0 +1,20 @@
+{
+  "id": "breien-voor-beginners-materiaal",
+  "page": "breien/voor-beginners/index.html",
+  "slot": "materiaal",
+  "required": true,
+  "reason": "Montrer le poste de départ minimal décrit dans le tableau matériel : paire d’aiguilles, fil clair, ciseaux et aiguille à laine. Après le tableau, dans l’article. Sans mailles montées ni illustration de gestes. Cycle explicitement autorisé par Marc après validation de Haken projecten le 25 octobre 2026.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:breien-voor-beginners-materiaal -->",
+  "output_path": "assets/generated/breien-voor-beginners-materiaal.webp",
+  "prompt": "Realistic editorial photograph of a quiet beginner knitting workspace before the first stitch: exactly two plain straight wooden knitting needles laid parallel on a soft cream linen mat, one smooth light peach yarn ball with a loose end resting freely, small closed scissors and one blunt tapestry needle placed separately. No knitted sample or finished garment. Show the whole modest kit clearly with generous space between objects and realistic everyday proportions. Gentle oblique overhead view, soft natural morning window light, pale wooden table, muted sage background, candid documentary craft photography. All tools at rest, no mounted stitches, no active knitting, no hands, no charts, no labels, no text, no logos or watermark. Generic illustrative setup, not an exact needle size demonstration, product test or proof of a specific fiber composition.",
+  "alt": "Twee rechte houten breinaalden, licht perzikkleurig garen, een schaar en een stopnaald op een linnen mat",
+  "caption": "Met AI gemaakte illustratie van het basismateriaal; de foto toont niet de 18 opgezette steken uit de oefening.",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
