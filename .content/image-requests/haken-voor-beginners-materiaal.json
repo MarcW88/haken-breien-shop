@@ -1,0 +1,20 @@
+{
+  "id": "haken-voor-beginners-materiaal",
+  "page": "haken/voor-beginners/index.html",
+  "slot": "materiaal",
+  "required": true,
+  "reason": "Montrer comment préparer le matériel minimal de la première leçon : fil lisse clair, un crochet, ciseaux et aiguille à laine. Placement après le tableau du matériel dans l’article, avant le paragraphe sur la prise en main. Aucune démonstration de point ni quantité exacte de mailles. Autorisé par Marc le 25 octobre 2026 après validation d’Inspiratie.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:haken-voor-beginners-materiaal -->",
+  "output_path": "assets/generated/haken-voor-beginners-materiaal.webp",
+  "prompt": "A quiet realistic editorial photograph of a beginner crochet workspace before starting: one smooth light pale-yellow yarn ball with its loose end resting freely on a light linen mat, one plain unbranded crochet hook lying flat beside it, small closed craft scissors and one blunt tapestry needle placed separately. No textile sample and no completed project. A clear uncluttered setup showing only the few supplies needed for a first practice session. Soft morning window light on a pale wooden table, natural sage and cream background, close gently oblique overhead framing, realistic everyday proportions and materials, candid craft documentary photography. All tools at rest. No hands, no active loop or stitch, no diagrams, no printed instructions, no labels, no text, no logos or watermark. Generic illustrative supplies, not a product test or evidence of an exact hook size.",
+  "alt": "Lichtgeel garen, een haaknaald, een gesloten schaar en een stopnaald op een linnen mat",
+  "caption": "Met AI gemaakte illustratie van het basismateriaal voor je eerste haakoefening.",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
