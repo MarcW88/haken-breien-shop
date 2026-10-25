@@ -1,11 +1,11 @@
-"""Local stdlib validation for one or all Breien pages. Does not run editorial AI skills."""
+"""Local stdlib validation for one or all Garen pages. Does not run editorial AI skills."""
 from pathlib import Path
 from html.parser import HTMLParser
 import os,re,sys,json
 ROOT=Path(__file__).resolve().parents[2]
 BASE=ROOT/"garen"
 slug=os.getenv("GAREN_PAGE","").strip("/")
-pages=[BASE/"index.html"]+sorted(BASE.glob("*/index.html")) if not slug else [BASE/("index.html" if slug=="breien" else slug+"/index.html")]
+pages=[BASE/"index.html"]+sorted(BASE.glob("*/index.html")) if not slug else [BASE/("index.html" if slug=="garen" else slug+"/index.html")]
 class Links(HTMLParser):
  def __init__(self):super().__init__();self.links=[];self.h1=0
  def handle_starttag(self,tag,attrs):
