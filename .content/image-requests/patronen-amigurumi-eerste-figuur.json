@@ -1,0 +1,20 @@
+{
+  "id": "patronen-amigurumi-eerste-figuur",
+  "page": "patronen/amigurumi/index.html",
+  "slot": "eerste-figuur",
+  "required": true,
+  "reason": "Visualiser un petit personnage décoratif à corps simple après le tableau de choix d’une première forme. Sans représenter les étapes techniques, un patron fourni ou une preuve de sécurité jouet. Cycle explicitement autorisé par Marc après validation de Garen katoen le 25 octobre 2026.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:patronen-amigurumi-eerste-figuur -->",
+  "output_path": "assets/generated/patronen-amigurumi-eerste-figuur.webp",
+  "prompt": "Natural-light editorial photograph of a single original small decorative crochet character: a simple rounded pear-shaped sage-green body with a tiny understated smile and two small eyes stitched directly in dark yarn, no limbs, no ears, no buttons, no plastic eyes, no detachable accessories. Standing alone on a pale wooden shelf beside one plain cream yarn ball for craft context. A modest generic amigurumi design, realistic everyday scale and tactile yarn surface, soft side window light, uncluttered warm neutral background, candid documentary craft photography. Creative illustration only, not a supplied crochet pattern, not an exact stitch demonstration, not a tested or certified toy. No child or nursery setting, no hands, no active stitching, no chart, no text, no labels, no logos, no watermark.",
+  "alt": "Een eenvoudig groen amigurumifiguurtje met geborduurde ogen en mond naast een bol garen",
+  "caption": "Met AI gemaakt decoratief voorbeeld; geen uitgewerkt patroon of bewijs van speelgoedveiligheid.",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
