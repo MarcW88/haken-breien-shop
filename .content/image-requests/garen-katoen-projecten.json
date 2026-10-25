@@ -1,0 +1,20 @@
+{
+  "id": "garen-katoen-projecten",
+  "page": "garen/katoen/index.html",
+  "slot": "projecten",
+  "required": true,
+  "reason": "Illustrer deux types d’ouvrages évoqués dans la section projets : petit doekje et sac générique. Après le tableau, avant les critères de choix selon l’usage. Aucune composition, résistance, capacité ou performance de lavage démontrée par l’image. Cycle explicitement autorisé par Marc après validation de Breien projecten le 25 octobre 2026.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:garen-katoen-projecten -->",
+  "output_path": "assets/generated/garen-katoen-projecten.webp",
+  "prompt": "Natural-light editorial still-life photograph of two modest handmade yarn craft project ideas: a small folded rectangular cream cloth and a simple small sage-green crocheted bag lying flat and empty with its handles resting beside it, on a pale wooden table. One plain unlabelled yarn ball set discreetly to the side. Gently oblique overhead framing, soft side window light, warm neutral surroundings, realistic everyday proportions, tactile materials, candid documentary craft photography. Generic examples of project types only; do not imply verified cotton composition, load capacity, washability, absorbency or a supplied pattern. No load inside the bag, no washing scene, no hands, no active stitch, no chart, no printed labels, no text, no branding, no watermark.",
+  "alt": "Een crèmekleurig handwerkdoekje en een leeg groen gehaakt tasje naast een bol garen",
+  "caption": "Met AI gemaakte projectillustratie; vezelsamenstelling en gebruikseigenschappen zijn niet uit de foto af te leiden.",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
