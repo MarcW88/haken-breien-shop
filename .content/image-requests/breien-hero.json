@@ -6,7 +6,7 @@
   "reason": "Illustrer le matériel minimal décrit dans la section Welke wol en naalden heb je nodig? : deux aiguilles droites, une pelote lisse claire et des ciseaux, au repos. Pas de démonstration de montage ni de preuve produit. Cycle suivant autorisé par Marc après validation de /haken/ le 25 octobre 2026.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:breien-hero -->",
   "output_path": "assets/generated/breien-hero.webp",
   "prompt": "Editorial still-life photograph of a minimal beginner knitting kit on a softly lit pale wooden table: exactly two simple straight bamboo knitting needles lying side by side with their pointed ends and small end stops visible, one smooth light oatmeal yarn ball and small closed craft scissors placed separately. A plain linen cloth softly folded in the background. Gentle overhead three-quarter framing, natural side window light, warm cream and muted sage surroundings, realistic everyday objects, understated documentary craft photography. No stitches mounted on the needles, no active knitting, no hands, no illustrated instructions, no labels, no readable text, no logos, no watermark. Generic unbranded tools; illustrative setup, not a product test or a claim of material performance.",
@@ -16,5 +16,8 @@
   "height": 672,
   "prompt_upsampling": true,
   "seed": null,
-  "generated_at": null
+  "generated_at": "2026-10-25T07:26:11.963836+00:00",
+  "bfl_request_id": "7ad87e99-f330-4431-8e44-07f04a5452a3",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }
