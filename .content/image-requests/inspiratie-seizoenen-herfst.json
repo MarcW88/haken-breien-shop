@@ -6,7 +6,7 @@
   "reason": "Concrétiser l’idée automnale d’une écharpe et de superpositions après les quatre cartes saisonnières, hors grille pour préserver leur équilibre. Illustration de contexte, sans preuve de chaleur ou protection. Cycle explicitement autorisé par Marc après validation d’Inspiratie cadeaus le 25 octobre 2026.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:inspiratie-seizoenen-herfst -->",
   "output_path": "assets/generated/inspiratie-seizoenen-herfst.webp",
   "prompt": "Natural-light editorial photograph of an understated autumn craft project: a simple rust-colored handmade knitted scarf loosely draped over the back of a plain wooden chair beside a softly lit window, a small matching unlabelled yarn ball resting on the chair seat. Outside the window a gently blurred garden with muted autumn foliage, quiet ordinary home setting, warm cream and sage surroundings, realistic everyday scale and tactile textile, candid documentary photography, soft diffuse daylight, uncluttered composition. Seasonal project inspiration only, not a claim of thermal performance, fiber composition or a supplied pattern. No person, no hands, no active knitting, no chart, no text, no labels, no branding, no watermark.",
@@ -16,5 +16,8 @@
   "height": 672,
   "prompt_upsampling": true,
   "seed": null,
-  "generated_at": null
+  "generated_at": "2026-10-25T17:33:30.786340+00:00",
+  "bfl_request_id": "1f09399f-55ce-48b2-b1ab-396a42da7b2c",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }
