@@ -6,7 +6,7 @@
   "reason": "Contexte de sélection d’un fil selon le projet, après le tableau de la section Welk garen past bij je project? Illustration de préparation d’un ouvrage générique, sans comparaison visuelle de fibres, preuve de performance ou étiquette inventée. Cycle Garen explicitement autorisé par Marc après validation de Breien le 25 octobre 2026.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:garen-hero -->",
   "output_path": "assets/generated/garen-hero.webp",
   "prompt": "Natural-light editorial photograph of planning a small yarn craft project at a pale wooden table: three plain unlabelled yarn balls in muted sage, warm cream and dusty terracotta, beside one loosely folded simple rectangular handmade scarf and a single pair of generic knitting needles resting separately on a linen cloth. A modest realistic everyday arrangement with space between objects, photographed from a gentle overhead angle, soft side window light, tactile natural-looking textures and realistic proportions, candid documentary craft photography. The scene illustrates choosing yarn for a project, not identifying fiber composition or comparing technical performance. No active knitting, no hands, no charts, no labels, no text, no logos, no watermark, no packaging, no product test.",
@@ -16,5 +16,8 @@
   "height": 672,
   "prompt_upsampling": true,
   "seed": null,
-  "generated_at": null
+  "generated_at": "2026-10-25T07:37:39.500334+00:00",
+  "bfl_request_id": "3cf1373f-1505-468e-8f7d-e0a08246aab4",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }
